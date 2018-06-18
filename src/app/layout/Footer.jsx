@@ -89,9 +89,6 @@ export class Footer extends React.Component {
             <div className="copyright">
               © Copyright <strong>BizPage</strong>. All Rights Reserved
             </div>
-            <div className="credits">
-              <Link to="https://bootstrapmade.com/">BootstrapMade</Link>
-            </div>
           </div>
         </footer>
       </div>
