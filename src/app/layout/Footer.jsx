@@ -70,9 +70,7 @@ export class Footer extends React.Component {
                       <i className="fa fa-linkedin" />
                     </Link>
                   </div>
-
                 </div>
-
                 <div className="col-lg-3 col-md-6 footer-newsletter">
                   <h4>Follow Us On facebook</h4>
                   <p>
@@ -83,7 +81,6 @@ export class Footer extends React.Component {
                     <input type="submit" value="Subscribe" />
                   </form>
                 </div>
-
               </div>
             </div>
           </div>
@@ -98,7 +95,7 @@ export class Footer extends React.Component {
           </div>
         </footer>
       </div>
-    )
+    );
   }
 }
 export default Footer
