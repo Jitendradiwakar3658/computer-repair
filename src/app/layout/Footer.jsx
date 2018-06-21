@@ -73,21 +73,15 @@ export class Footer extends React.Component {
                 </div>
                 <div className="col-lg-3 col-md-6 footer-newsletter">
                   <h4>Follow Us On facebook</h4>
-                  <p>
-                    Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.
-                  </p>
-                  <form action="" method="post">
-                    <input type="email" name="email" />
-                    <input type="submit" value="Subscribe" />
-                  </form>
-                </div>
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width={255} height={250}  scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                  </div>
               </div>
             </div>
           </div>
 
           <div className="container">
             <div className="copyright">
-              © Copyright <strong>BizPage</strong>. All Rights Reserved
+              © Copyright <strong>Axis Computer</strong>. All Rights Reserved
             </div>
           </div>
         </footer>
