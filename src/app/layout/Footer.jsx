@@ -14,7 +14,9 @@ export class Footer extends React.Component {
                 <div className="col-lg-3 col-md-6 footer-info">
                   <h2>Axis Computer</h2>
                   <p>
-                    Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.
+                  <strong>Axis Computer</strong> was established in Ghaziabad since 2000 and we provide all kind of service
+                in Laptop. We provide <strong>home services</strong> as well as our own<strong> shop</strong>. We have 10+ years
+                experience to repair laptops like <strong>Dell, Hp, Lenovo, Macbook, Acer, Sony</strong> etc.
                   </p>
                 </div>
 
@@ -51,8 +53,8 @@ export class Footer extends React.Component {
                     A108 Adam Street <br />
                     New York, NY 535022<br />
                     United States <br />
-                    <strong>Phone:</strong> +1 5589 55488 55<br />
-                    <strong>Email:</strong> info@example.com<br />
+                    <strong>Phone:</strong> +91 8510 0446 42<br />
+                    <strong>Email:</strong> 2shiv.pratap@gmail.com<br />
                   </p>
 
                   <div className="social-links">
@@ -73,7 +75,9 @@ export class Footer extends React.Component {
                 </div>
                 <div className="col-lg-3 col-md-6 footer-newsletter">
                   <h4>Follow Us On facebook</h4>
-                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width={255} height={250}  scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                  width={255} height={250}  scrolling="no" frameBorder={0} allowtransparency="true" allow="encrypted-media" iframe-has-title="Axis Computer">
+                  </iframe>
                   </div>
               </div>
             </div>
