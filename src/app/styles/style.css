@@ -301,7 +301,20 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
+.dropdown-menu{
+  background-color: #343a40;
+  color:#18d36e;
+}
+.dropdown-menu a:hover{
+  color:#18d36e;
+}
+.navmenu ul li a:hover{
+  color:#18d36e;
+}
 
+.navmenu li:hover > a, .navmenu > .menu-active > a {
+  color: #18d26e;
+}
 
 .nav-menu, .nav-menu * {
   margin: 0;
@@ -379,6 +392,9 @@ h1, h2, h3, h4, h5, h6 {
 .navA a{
   color:#18d26e;
 }
+.nav-menu ul{
+  background-color: #111;
+}
 .nav-menu a {
   padding: 0 8px 10px 8px;
   text-decoration: none;
@@ -387,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
-  outline: none;
+  outline: #18d36e;
 }
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {

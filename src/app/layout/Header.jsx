@@ -30,7 +30,7 @@ export class Header extends React.Component {
               </button>
 
                <div class="collapse navbar-collapse navmenu" id="navbarResponsive">
-                  <ul class="navbar-nav ml-auto ">
+                  <ul class="navbar-nav ml-auto nav-menu nav-bar">
                   <li class="nav-item active">
 
                   </li>
@@ -53,7 +53,7 @@ export class Header extends React.Component {
                       Services
                     </Link>
                     <div
-                      className="dropdown-menu"
+                      className="dropdown-menu "
                       aria-labelledby="navbarDropdownPortfolio"
                     >
                       <Link className="dropdown-item" to="/dell-laptop-service">
