@@ -304,9 +304,12 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-menu{
   background-color: #343a40;
   color:#18d36e;
+  text-align: center;
 }
 .dropdown-menu a:hover{
   color:#18d36e;
+  padding: 10px;
+  text-align: center;
 }
 .navmenu ul li a:hover{
   color:#18d36e;
