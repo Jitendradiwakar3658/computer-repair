@@ -91,36 +91,38 @@ class About extends React.Component {
                   <li>Provide All Kind Of Service In Laptop</li>
                 </ul>
               </div>
-              <div className="col-md-3">
-                <ul className="pull-right">
-                  <li>
-                    <i className="ion-ios-arrow-right" /> <Link to="dell-laptop-service">Dell Service Center</Link>
-                    <hr/>
-                  </li>
-                  <li>
-                    <i className="ion-ios-arrow-right" /> <Link to="lenevo-laptop-service">Lenovo Service Center</Link>
-                    <hr/>
-                  </li>
-                  <li>
-                    <i className="ion-ios-arrow-right" /> <Link to="hp-laptop-service">Hp Service Center</Link>
-                    <hr/>
-                  </li>
-                  <li>
-                    <i className="ion-ios-arrow-right" />
-                    <Link to="mac-laptop-service">MacBook Service Center</Link>
-                    <hr/>
-                  </li>
-                  <li>
-                    <i className="ion-ios-arrow-right" />
-                    <Link to="acer-laptop-service">Acer Service Center</Link>
-                    <hr/>
-                  </li>
-                  <li>
-                    <i className="ion-ios-arrow-right" />
-                    <Link to="sony-laptop-service">Sony Service Center</Link>
-                    <hr/>
-                  </li>
-                </ul>
+              <div className="col-md-3"></div>
+              <div id="aboutservice" className="col-md-3">
+                <div className="aboutservice-top">
+                  <div >
+                    <div className=" aboutservice-links">
+                      <h4>Our Services</h4>
+                      <ul>
+                        <li>
+                          <i className="ion-ios-arrow-right" /> <Link to="dell-laptop-service">Dell Service Center</Link>
+                        </li>
+                        <li>
+                          <i className="ion-ios-arrow-right" /> <Link to="lenevo-laptop-service">Lenovo Service Center</Link>
+                        </li>
+                        <li>
+                          <i className="ion-ios-arrow-right" /> <Link to="hp-laptop-service">Hp Service Center</Link>
+                        </li>
+                        <li>
+                          <i className="ion-ios-arrow-right" />
+                          <Link to="mac-laptop-service">MacBook Service Center</Link>
+                        </li>
+                        <li>
+                          <i className="ion-ios-arrow-right" />
+                          <Link to="acer-laptop-service">Acer Service Center</Link>
+                        </li>
+                        <li>
+                          <i className="ion-ios-arrow-right" />
+                          <Link to="sony-laptop-service">Sony Service Center</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

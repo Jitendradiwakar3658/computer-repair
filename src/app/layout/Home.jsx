@@ -3,7 +3,7 @@ import "../styles/style.css"
 import { Link } from "react-router-dom"
 
 export class Home extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <div
@@ -77,7 +77,10 @@ export class Home extends React.Component {
             <header className="section-header wow fadeInUp">
               <h3>Services</h3>
               <p>
-                Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.
+                We provide home services as well as our own shop. We have 10+ years experience
+                 to repair laptops like Dell, Hp, Lenovo, Macbook, Acer, Sony etc. We have good knack over
+                 Motherboard replacement, Battery replacement, Software installation, Windows installation,
+                 Hinges replacement, Keyboard replacement, Screen relacement.
               </p>
             </header>
 
@@ -188,9 +191,12 @@ export class Home extends React.Component {
         <section id="about">
           <div className="container">
             <header className="section-header">
-              <h3 className="abc">Our Skills</h3>
+              <h3>Our Skills</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                We have best team to repair Laptops. We provide all kinds of servicing in laptop and we handle daily
+                10-15 laptop repair and we provide you fast service so you can save your also. We are easing the pain of
+                technology frustrations with our knowledgeable and skilled technicians. It’s our goal to be Link
+                top-most provider of computer support for businesses as well as home users.
               </p>
             </header>
             <div className="row about-cols">
@@ -701,7 +707,7 @@ export class Home extends React.Component {
                 <br />
                 <div className="contact-phone">
                   <h3>Phone Number</h3>
-                  <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                  <p><a href="tel:+918510044642">+91 8510 0446 42</a></p>
                 </div>
               </div>
 
@@ -710,7 +716,7 @@ export class Home extends React.Component {
                 <br />
                 <div className="contact-email">
                   <h3>Email</h3>
-                  <p><a href="mailto:info@example.com">info@example.com</a></p>
+                  <p><a href="mailto:2shiv.pratap@gmail.com">2shiv.pratap@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -722,10 +728,7 @@ export class Home extends React.Component {
                 <div className="form-row">
                   <div className="form-group col-md-6">
                     <input
-                      type="text"
-                      name="name"
-                      className="form-control"
-                      id="name"
+                      type="text" name="name" className="form-control" id="name"
                       placeholder="Your Name"
                       data-rule="minlen:4"
                       data-msg="Please enter at least 4 chars"
