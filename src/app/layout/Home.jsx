@@ -779,6 +779,9 @@ export class Home extends React.Component {
         <a href="#" className="back-to-top">
           <i className="fa fa-chevron-up" />
         </a>
+        <div className="fixedcontact">
+
+        </div>
       </div>
     )
   }

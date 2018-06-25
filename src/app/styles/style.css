@@ -1556,11 +1556,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #18d26e;
 }
 
-
-
-
-
-
-
-
-
+.fixedcontact{
+  background-color: #18d26e;
+  height: 30px;
+  width: 200px;
+  overflow: auto;
+  margin-right: 5px;
+}
