@@ -14,31 +14,27 @@ import AcerService from "../service/AcerService"
 import SonyService from "../service/SonyService"
 
 export class Header extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         {/* <div id="logo" class="pull-left">
           <h1><a href="#intro" class="scrollto">Axis Computer</a></h1>
         </div> */}
         <header className="nb-header nav-menu-container">
-          <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container">
               <Link className="navbar-brand" to="/">Axis Computer</Link>
-              <button
-                className="navbar-toggler navbar-toggler-right"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarResponsive"
-                aria-controls="navbarResponsive"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon" />
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarResponsive">
-                <ul className=" ml-auto nav-menu">
-                  <li className="nav-item menu-active">
-                    <Link className="nav-link" to="/">Home</Link>
+
+               <div class="collapse navbar-collapse navmenu" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item active">
+
+                  </li>
+                  <li className="nav-item ">
+                    <Link className="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to="/about">About</Link>
@@ -56,7 +52,7 @@ export class Header extends React.Component {
                       Services
                     </Link>
                     <div
-                      className="dropdown-menu dropdown-menu-right menu-has-children"
+                      className="dropdown-menu"
                       aria-labelledby="navbarDropdownPortfolio"
                     >
                       <Link className="dropdown-item" to="/dell-laptop-service">
@@ -93,11 +89,11 @@ export class Header extends React.Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/dell-laptop-service" component={DellService} />
-             <Route path="/hp-laptop-service" component={HpService} />
+            <Route path="/hp-laptop-service" component={HpService} />
             <Route path="/lenevo-laptop-service" component={LenevoService} />
             <Route path="/mac-laptop-service" component={MacBookService} />
             <Route path="/acer-laptop-service" component={AcerService} />
-            <Route path="/sony-laptop-service" component={SonyService} /> 
+            <Route path="/sony-laptop-service" component={SonyService} />
             <Route path="/contact" component={Contact} />
             <Route path="/blog" component={Blog} />
           </Switch>

@@ -547,7 +547,7 @@ export class Home extends React.Component {
           </div>
         </section>
 
-        <section id="testimonials" className="section-bg wow fadeInUp">
+        <section id="testimonials" className="owl-carousel section-bg ">
           <div className="container">
 
             <header className="section-header">
@@ -555,13 +555,8 @@ export class Home extends React.Component {
             </header>
 
             <div className="owl-carousel testimonials-carousel">
-
               <div className="testimonial-item">
-                <img
-                  src={require("../img/testimonial-1.jpg")}
-                  className="testimonial-img"
-                  alt=""
-                />
+                <img src={require("../img/testimonial-1.jpg")} className="testimonial-img" alt=""/>
                 <h3>Saul Goodman</h3>
                 <h4>Ceo & Founder</h4>
                 <p>
