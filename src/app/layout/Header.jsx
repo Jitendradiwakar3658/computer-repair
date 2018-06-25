@@ -20,6 +20,7 @@ export class Header extends React.Component {
         {/* <div id="logo" class="pull-left">
           <h1><a href="#intro" class="scrollto">Axis Computer</a></h1>
         </div> */}
+        <br/><br/>
         <header className="nb-header nav-menu-container">
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container">
