@@ -175,7 +175,7 @@ export class Home extends React.Component {
 
           </div>
         </section>
-        <section id="call-to-action" className="wow fadeIn">
+        {/* <section id="call-to-action" className="wow fadeIn">
           <div className="container text-center">
             <h3>Call To Action</h3>
             <p>
@@ -183,7 +183,7 @@ export class Home extends React.Component {
             </p>
             <Link className="cta-btn" to="#">Call To Action</Link>
           </div>
-        </section>
+        </section> */}
 
         <section id="about">
           <div className="container">
