@@ -97,7 +97,8 @@ export class Home extends React.Component {
                   <Link to="dell-laptop-service">Dell Laptop</Link>
                 </h4>
                 <p className="description">
-                  Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Dell,
+                  we provide all kind of service for <strong>Dell Laptop </strong> like S <Link  to="/dell-laptop-service">Read more...</Link>
                 </p>
               </div>
               <div
@@ -111,7 +112,8 @@ export class Home extends React.Component {
                   <Link to="hp-laptop-service">Hp Laptop</Link>
                 </h4>
                 <p className="description">
-                  Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata
+                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Hp,
+                 we provide all kind of service for <strong>Hp Laptop </strong> like Scr <Link  to="/hp-laptop-service">Read more...</Link>
                 </p>
               </div>
               <div
@@ -125,7 +127,8 @@ export class Home extends React.Component {
                   <Link to="lenevo-laptop-service">Lenevo Laptop</Link>
                 </h4>
                 <p className="description">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Lenevo,
+                  we provide all kind of service for <strong>Lenevo Lapt </strong> <Link  to="/lenevo-laptop-service">Read more...</Link>
                 </p>
               </div>
               <div
@@ -140,7 +143,8 @@ export class Home extends React.Component {
                   <Link to="mac-laptop-service">Mac Book</Link>
                 </h4>
                 <p className="description">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Mac,
+                  we provide all kind of service for <strong>Mac Laptop </strong>  <Link  to="/mac-laptop-service">Read more...</Link>
                 </p>
               </div>
               <div
@@ -155,7 +159,8 @@ export class Home extends React.Component {
                   <Link to="sony-laptop-service">Sony Laptop</Link>
                 </h4>
                 <p className="description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Sony,
+                  we provide all kind of service for <strong>Sony Laptop </strong> <Link  to="/sony-laptop-service">Read more...</Link>
                 </p>
               </div>
               <div
@@ -170,7 +175,8 @@ export class Home extends React.Component {
                   <Link to="acer-laptop-service">Acer Laptop</Link>
                 </h4>
                 <p className="description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Acer,
+                  we provide all kind of service for <strong>Acer Laptop </strong> <Link  to="/acer-laptop-service">Read more...</Link>
                 </p>
               </div>
 
@@ -689,7 +695,9 @@ export class Home extends React.Component {
                 />
                 <div className="contact-address">
                   <h3>Address</h3>
-                  <address>A108 Adam Street, NY 535022, USA</address>
+                  <address>Shop No. 6, Fisrt 
+                    Floor, Sunrise Mall,
+                    Sec-11, Vasundhara, Gzb. U.P.</address>
                 </div>
               </div>
 

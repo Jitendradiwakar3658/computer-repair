@@ -1,6 +1,8 @@
 import React from "react"
 import "../styles/style.css"
 class Contact extends React.Component {
+
+
   render() {
     return (
       <div>
@@ -25,7 +27,9 @@ class Contact extends React.Component {
                 <div className="contact-address">
 
                   <h3>Address</h3>
-                  <address>A108 Adam Street, NY 535022, USA</address>
+                  <address>Shop No. 6, Fisrt 
+                    Floor, Sunrise Mall,
+                    Sec-11, Vasundhara, Gzb. U.P.</address>
                 </div>
               </div>
 
@@ -58,7 +62,7 @@ class Contact extends React.Component {
             <div className="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage" />
-              <form action="" method="post" role="form" className="contactForm">
+              <form action="" method="post" role="form" className="contactForm" action="mailto:jitendra.diwaker@gmail.com">
                 <div className="form-row">
                   <div className="form-group col-md-6">
                     <input

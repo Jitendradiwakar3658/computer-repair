@@ -50,9 +50,9 @@ export class Footer extends React.Component {
                 <div className="col-lg-3 col-md-6 footer-contact">
                   <h4>Contact Us</h4>
                   <p>
-                    A108 Adam Street <br />
-                    New York, NY 535022<br />
-                    United States <br />
+                    Shop No. 6, Fisrt <br />
+                    Floor, Sunrise Mall,<br />
+                    Sec-11, Vasundhara, Gzb <br />
                     <strong>Phone:</strong> +91 8510 0446 42<br />
                     <strong>Email:</strong> 2shiv.pratap@gmail.com<br />
                   </p>
