@@ -682,7 +682,7 @@ export class Home extends React.Component {
             <div className="section-header">
               <h3>Contact Us</h3>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+              Email us with any query or call +91 8510 0446 42. We would be happy to solve your problem and set up meeting with you.
               </p>
             </div>
 
@@ -695,9 +695,9 @@ export class Home extends React.Component {
                 />
                 <div className="contact-address">
                   <h3>Address</h3>
-                  <address>Shop No. 6, Fisrt 
+                  <address>Shop No. 6, First 
                     Floor, Sunrise Mall,
-                    Sec-11, Vasundhara, Gzb. U.P.</address>
+                    Sec-11, Vasundhara, Ghaziabad, U.P.</address>
                 </div>
               </div>
 
