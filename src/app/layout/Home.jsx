@@ -288,18 +288,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/web3.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="Web 3"
-                      title="Preview"
-                    >
-                      <i className="ion ion-eye" />
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
@@ -319,18 +307,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/web3.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="Web 3"
-                      title="Preview"
-                    >
-                      <i className="ion ion-eye" />
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
@@ -350,18 +326,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/app2.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="App 2"
-                      title="Preview"
-                    >
-                      <i className="ion ion-eye" />
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
@@ -378,18 +342,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/card2.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="Card 2"
-                      title="Preview"
-                    >
-                      <i className="ion ion-eye" />
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
@@ -409,18 +361,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/web2.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="Web 2"
-                      title="Preview"
-                    >
-                      <i className="ion ion-eye" />
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
@@ -440,18 +380,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/app3.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="App 3"
-                      title="Preview"
-                    >
-                      <i className="ion ion-eye" />
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
@@ -468,18 +396,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/card1.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="Card 1"
-                      title="Preview"
-                    >
-                      {/* <i className="ion ion-eye" /> */}
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      {/* <i className="ion ion-android-open" /> */}
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
@@ -499,18 +415,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/card3.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="Card 3"
-                      title="Preview"
-                    >
-                      <i className="ion ion-eye" />
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
@@ -530,18 +434,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                       alt=""
                     />
-                    <Link
-                      to={require("../img/portfolio/web1.jpg")}
-                      className="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="Web 1"
-                      title="Preview"
-                    >
-                      <i className="ion ion-eye" />
-                    </Link>
-                    <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
-                    </Link>
                   </figure>
 
                   <div className="portfolio-info">
