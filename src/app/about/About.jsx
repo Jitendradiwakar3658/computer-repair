@@ -107,18 +107,6 @@ class About extends React.Component {
                         <li>
                           <i className="ion-ios-arrow-right" /> <Link to="hp-laptop-service">Hp Service Center</Link>
                         </li>
-                        <li>
-                          <i className="ion-ios-arrow-right" />
-                          <Link to="mac-laptop-service">MacBook Service Center</Link>
-                        </li>
-                        <li>
-                          <i className="ion-ios-arrow-right" />
-                          <Link to="acer-laptop-service">Acer Service Center</Link>
-                        </li>
-                        <li>
-                          <i className="ion-ios-arrow-right" />
-                          <Link to="sony-laptop-service">Sony Service Center</Link>
-                        </li>
                       </ul>
                     </div>
                   </div>

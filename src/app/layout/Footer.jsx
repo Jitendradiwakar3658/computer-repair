@@ -41,7 +41,7 @@ export class Footer extends React.Component {
                     Shop No. 1, Fisrt <br />
                     Floor, Sunrise Mall,<br />
                     Sec-11, Vasundhara, Ghaziabad <br />
-                    <strong>Phone:</strong> +91 8510 0446 42<br />
+                    <strong>Phone:</strong> +91 8510 0446 42,<br/> 9873 8446 42<br />
                     <strong>Email:</strong> 2shiv.pratap@gmail.com<br />
                   </p>
 

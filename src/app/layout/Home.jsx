@@ -284,14 +284,14 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/app1.jpg")}
+                      src={require("../img/portfolio/motherboard.jpg")}
                       className="img-fluid"
                       alt=""
                     />
                   </figure>
 
                   <div className="portfolio-info">
-                    <h4><Link to="#">MOTHERBOARD INSTALLATION</Link></h4>
+                    <h4><Link to="#">MOTHERBOARD REPLACEMENT</Link></h4>
                   </div>
                 </div>
               </div>
@@ -303,7 +303,7 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/web3.jpg")}
+                      src={require("../img/portfolio/antivirus-insatallation.jpg")}
                       className="img-fluid"
                       alt=""
                     />
@@ -322,14 +322,14 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/app2.jpg")}
+                      src={require("../img/portfolio/software-installation.jpg")}
                       className="img-fluid"
                       alt=""
                     />
                   </figure>
 
                   <div className="portfolio-info">
-                    <h4><Link to="#">SOFTWARE REPLACEMENT</Link></h4>
+                    <h4><Link to="#">SOFTWARE INSTALLATION</Link></h4>
                   </div>
                 </div>
               </div>
@@ -338,7 +338,7 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/card2.jpg")}
+                      src={require("../img/portfolio/touchpad-replacement.jpg")}
                       className="img-fluid"
                       alt=""
                     />
@@ -357,14 +357,14 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/web2.jpg")}
+                      src={require("../img/portfolio/body-replacement.jpg")}
                       className="img-fluid"
                       alt=""
                     />
                   </figure>
 
                   <div className="portfolio-info">
-                    <h4><Link to="#">BOTTOM BASE REPLACEMENT</Link></h4>
+                    <h4><Link to="#">BODY REPAIR & REPLACEMENT</Link></h4>
                   </div>
                 </div>
               </div>
@@ -376,7 +376,7 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/app3.jpg")}
+                      src={require("../img/portfolio/hinges-replacement.jpg")}
                       className="img-fluid"
                       alt=""
                     />
@@ -392,7 +392,7 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/card1.jpg")}
+                      src={require("../img/portfolio/laptop-service.jpg")}
                       className="img-fluid"
                       alt=""
                     />
@@ -411,7 +411,7 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/card3.jpg")}
+                      src={require("../img/portfolio/screen-replacement.jpg")}
                       className="img-fluid"
                       alt=""
                     />
@@ -430,7 +430,7 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/web1.jpg")}
+                      src={require("../img/portfolio/keyboard-replacement.jpg")}
                       className="img-fluid"
                       alt=""
                     />
