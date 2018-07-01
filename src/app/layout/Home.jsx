@@ -131,7 +131,7 @@ export class Home extends React.Component {
                   we provide all kind of service for <strong>Lenevo Lapt </strong> <Link  to="/lenevo-laptop-service">Read more...</Link>
                 </p>
               </div>
-              <div
+              {/* <div
                 className="col-lg-4 col-md-6 box wow bounceInUp"
                 data-wow-delay="0.1s"
                 data-wow-duration="1.4s"
@@ -178,7 +178,7 @@ export class Home extends React.Component {
                 <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Acer,
                   we provide all kind of service for <strong>Acer Laptop </strong> <Link  to="/acer-laptop-service">Read more...</Link>
                 </p>
-              </div>
+              </div> */}
 
             </div>
 
@@ -553,7 +553,7 @@ export class Home extends React.Component {
           </div>
         </section>
 
-        <section id="testimonials" className="owl-carousel section-bg ">
+        {/* <section id="testimonials" className="owl-carousel section-bg ">
           <div className="container">
 
             <header className="section-header">
@@ -675,7 +675,7 @@ export class Home extends React.Component {
             </div>
 
           </div>
-        </section>
+        </section> */}
 
         <section id="contact" className="section-bg wow fadeInUp">
           <div className="container">

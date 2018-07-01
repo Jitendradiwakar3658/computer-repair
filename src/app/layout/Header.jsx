@@ -9,9 +9,6 @@ import { Link, Route, Switch } from "react-router-dom"
 import { DellService } from "../service/DellService"
 import HpService from "../service/HpService"
 import LenevoService from "../service/LenevoService"
-import MacBookService from "../service/MacBookService"
-import AcerService from "../service/AcerService"
-import SonyService from "../service/SonyService"
 
 export class Header extends React.Component {
   render() {
@@ -40,6 +37,35 @@ export class Header extends React.Component {
                   <li className="nav-item">
                     <Link className="nav-link" to="/about">About</Link>
                   </li>
+
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      to="/#"
+                      id="navbarDropdownPortfolio"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Support Location
+                    </Link>
+                    <div
+                      className="dropdown-menu "
+                      aria-labelledby="navbarDropdownPortfolio"
+                    >
+                      <Link className="dropdown-item" to="/gaziabad-location">
+                        Ghaziabad
+                      </Link>
+                      <Link className="dropdown-item" to="/noida-location">
+                        Noida
+                      </Link>
+                      <Link className="dropdown-item" to="/greater-noida-location">
+                        Greater Noida
+                      </Link>
+                     
+                    </div>
+                  </li>
                   <li className="nav-item dropdown">
                     <Link
                       className="nav-link dropdown-toggle"
@@ -65,15 +91,7 @@ export class Header extends React.Component {
                       <Link className="dropdown-item" to="/lenevo-laptop-service">
                         LENEVO LAPTOP SERVICE
                       </Link>
-                      <Link className="dropdown-item" to="/mac-laptop-service">
-                        MAC LAPTOP SERVICE
-                      </Link>
-                      <Link className="dropdown-item" to="/acer-laptop-service">
-                        ACER LAPTOP SERVICE
-                      </Link>
-                      <Link className="dropdown-item" to="/sony-laptop-service">
-                        SONY LAPTOP SERVICE
-                      </Link>
+                      
                     </div>
                   </li>
                   <li className="nav-item">
@@ -92,9 +110,6 @@ export class Header extends React.Component {
             <Route path="/dell-laptop-service" component={DellService} />
             <Route path="/hp-laptop-service" component={HpService} />
             <Route path="/lenevo-laptop-service" component={LenevoService} />
-            <Route path="/mac-laptop-service" component={MacBookService} />
-            <Route path="/acer-laptop-service" component={AcerService} />
-            <Route path="/sony-laptop-service" component={SonyService} />
             <Route path="/contact" component={Contact} />
             <Route path="/blog" component={Blog} />
           </Switch>
