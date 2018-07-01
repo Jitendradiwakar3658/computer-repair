@@ -303,7 +303,7 @@ export class Home extends React.Component {
                   </figure>
 
                   <div className="portfolio-info">
-                    <h4><Link to="#">SOFTWARE INSTALLATION</Link></h4>
+                    <h4><Link to="#">MOTHERBOARD INSTALLATION</Link></h4>
                   </div>
                 </div>
               </div>
@@ -334,7 +334,7 @@ export class Home extends React.Component {
                   </figure>
 
                   <div className="portfolio-info">
-                    <h4><Link to="#">SOFTWARE INSTALLATION</Link></h4>
+                    <h4><Link to="#">ANTIVIRUS INSTALLATION</Link></h4>
                   </div>
                 </div>
               </div>
@@ -365,7 +365,7 @@ export class Home extends React.Component {
                   </figure>
 
                   <div className="portfolio-info">
-                    <h4><Link to="#">MOTHERBOARD REPLACEMENT</Link></h4>
+                    <h4><Link to="#">SOFTWARE REPLACEMENT</Link></h4>
                   </div>
                 </div>
               </div>
@@ -475,10 +475,10 @@ export class Home extends React.Component {
                       data-title="Card 1"
                       title="Preview"
                     >
-                      <i className="ion ion-eye" />
+                      {/* <i className="ion ion-eye" /> */}
                     </Link>
                     <Link to="#" className="link-details" title="More Details">
-                      <i className="ion ion-android-open" />
+                      {/* <i className="ion ion-android-open" /> */}
                     </Link>
                   </figure>
 
@@ -695,7 +695,7 @@ export class Home extends React.Component {
                 />
                 <div className="contact-address">
                   <h3>Address</h3>
-                  <address>Shop No. 6, First 
+                  <address>Shop No. 1, First 
                     Floor, Sunrise Mall,
                     Sec-11, Vasundhara, Ghaziabad, U.P.</address>
                 </div>

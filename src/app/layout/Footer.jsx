@@ -32,27 +32,15 @@ export class Footer extends React.Component {
                     <li>
                       <i className="ion-ios-arrow-right" /> <Link to="hp-laptop-service">Hp Service Center</Link>
                     </li>
-                    <li>
-                      <i className="ion-ios-arrow-right" />
-                      <Link to="mac-laptop-service">MacBook Service Center</Link>
-                    </li>
-                    <li>
-                      <i className="ion-ios-arrow-right" />
-                      <Link to="acer-laptop-service">Acer Service Center</Link>
-                    </li>
-                    <li>
-                      <i className="ion-ios-arrow-right" />
-                      <Link to="sony-laptop-service">Sony Service Center</Link>
-                    </li>
                   </ul>
                 </div>
 
                 <div className="col-lg-3 col-md-6 footer-contact">
                   <h4>Contact Us</h4>
                   <p>
-                    Shop No. 6, Fisrt <br />
+                    Shop No. 1, Fisrt <br />
                     Floor, Sunrise Mall,<br />
-                    Sec-11, Vasundhara, Gzb <br />
+                    Sec-11, Vasundhara, Ghaziabad <br />
                     <strong>Phone:</strong> +91 8510 0446 42<br />
                     <strong>Email:</strong> 2shiv.pratap@gmail.com<br />
                   </p>

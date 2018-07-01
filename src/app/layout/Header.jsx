@@ -9,6 +9,9 @@ import { Link, Route, Switch } from "react-router-dom"
 import { DellService } from "../service/DellService"
 import HpService from "../service/HpService"
 import LenevoService from "../service/LenevoService"
+import NoidaLocation from "../supportlocation/NoidaLocation"
+import GreaterNoidaLocation from "../supportlocation/GreaterNoidaLocation"
+import GhaziabadLocation from "../supportlocation/GhaziabadLocation"
 
 export class Header extends React.Component {
   render() {
@@ -107,6 +110,9 @@ export class Header extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/gaziabad-location" component={GhaziabadLocation}/>
+            <Route path="/noida-location" component={NoidaLocation}/>
+            <Route path="/greater-noida-location" component={GreaterNoidaLocation}/>
             <Route path="/dell-laptop-service" component={DellService} />
             <Route path="/hp-laptop-service" component={HpService} />
             <Route path="/lenevo-laptop-service" component={LenevoService} />
