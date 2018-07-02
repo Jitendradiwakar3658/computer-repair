@@ -115,6 +115,10 @@ class About extends React.Component {
             </div>
           </div>
         </section>
+        <div id="mySidenav">
+          <a to="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
+          } className="contact"  alt=""/><p className="contacttext">call us</p></a>
+        </div>
       </div>
     )
   }

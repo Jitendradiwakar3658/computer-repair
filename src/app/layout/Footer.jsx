@@ -64,7 +64,7 @@ export class Footer extends React.Component {
                 <div className="col-lg-3 col-md-6 footer-newsletter">
                   <h4>Follow Us On facebook</h4>
                   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-                  width={255} height={250}  scrolling="no" frameBorder={0} allowtransparency="true" allow="encrypted-media" iframe-has-title="Axis Computer">
+                 title="" width={255} height={250}  scrolling="no" frameBorder={0} allowtransparency="true" allow="encrypted-media" iframe-has-title="Axis Computer">
                   </iframe>
                   </div>
               </div>

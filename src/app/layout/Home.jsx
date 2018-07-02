@@ -215,7 +215,6 @@ export class Home extends React.Component {
                       className="img-fluid"
                     />
                     <div className="icon">
-                      <svg-icon><src to="svg/si-glyph-bed.svg" /></svg-icon>
                     </div>
                   </div>
                   <h2 className="title"><Link to="#">Our Mission</Link></h2>
@@ -254,7 +253,6 @@ export class Home extends React.Component {
                     />
                     <div className="icon">
                       <svg-icon>
-                        <src to="sprite.svg#si-glyph-biscuit" />
                       </svg-icon>
                     </div>
                   </div>
@@ -583,7 +581,7 @@ export class Home extends React.Component {
                 <img
                   src={require("../img/location.png")}
                   height={27}
-                  width={27}
+                  width={27} alt=""
                 />
                 <div className="contact-address">
                   <h3>Address</h3>
@@ -597,7 +595,7 @@ export class Home extends React.Component {
                 <img
                   src={require("../img/contact.png")}
                   height={27}
-                  width={27}
+                  width={27} alt=""
                 />
                 <br />
                 <div className="contact-phone">
@@ -607,7 +605,7 @@ export class Home extends React.Component {
               </div>
 
               <div className="col-md-4">
-                <img src={require("../img/email.png")} height={25} width={25} />
+                <img src={require("../img/email.png")} height={25} width={25} alt=""/>
                 <br />
                 <div className="contact-email">
                   <h3>Email</h3>
@@ -616,7 +614,7 @@ export class Home extends React.Component {
               </div>
             </div>
 
-            <div className="form">
+            <div className="forms">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage" />
               <form action="" method="post" role="form" className="contactForm">
@@ -681,10 +679,10 @@ export class Home extends React.Component {
         </a> */}
         <div id="mySidenav">
           <a to="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
-          } className="contact"/><p className="contacttext">contact us</p></a>
+          } className="contact"  alt=""/><p className="contacttext">call us</p></a>
         </div>
       </div>
     )
   }
 }
-export default Home
+export default Home;
