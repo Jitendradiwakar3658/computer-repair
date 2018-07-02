@@ -676,11 +676,12 @@ export class Home extends React.Component {
             </div>
           </div>
         </section>
-        <a href="#" className="back-to-top">
+        {/* <a href="#" className="back-to-top">
           <i className="fa fa-chevron-up" />
-        </a>
-        <div className="fixedcontact">
-
+        </a> */}
+        <div id="mySidenav">
+          <a to="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
+          } className="contact"/><p className="contacttext">contact us</p></a>
         </div>
       </div>
     )
