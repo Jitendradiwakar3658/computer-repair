@@ -17,17 +17,91 @@ export class Header extends React.Component {
   render() {
     return (
       <div >
-        {/* <div id="logo" class="pull-left">
-          <h1><a href="#intro" class="scrollto">Axis Computer</a></h1>
-        </div> */}
+        
         <br/><br/>
-        {/* <div className="row">
-          <div className="col-md-12"><h1>hiiii</h1></div>
+       {/* <header>
+        <div className="logo" >
+          <Link to="/">Axis Computer</Link>
+        </div>
+         <nav>
+           <ul>
+           <li className="nav-item active">
+                    <Link  to="/">Home <span className="sr-only">(current)</span></Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="dropdown-toggle"
+                      to="/#"
+                      id="navbarDropdownPortfolio"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Support Location
+                    </Link>
+                    <div
+                      className="dropdown-menu "
+                      aria-labelledby="navbarDropdownPortfolio"
+                    >
+                      <Link className="dropdown-item" to="/gaziabad-location">
+                        Ghaziabad
+                      </Link>
+                      <Link className="dropdown-item" to="/noida-location">
+                        Noida
+                      </Link>
+                      <Link className="dropdown-item" to="/greater-noida-location">
+                        Greater Noida
+                      </Link>
+                     
+                    </div>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <Link
+                      className="dropdown-toggle"
+                      to="/#"
+                      id="navbarDropdownPortfolio"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Services
+                    </Link>
+                    <div
+                      className="dropdown-menu "
+                      aria-labelledby="navbarDropdownPortfolio"
+                    >
+                      <Link className="dropdown-item" to="/dell-laptop-service">
+                        Dell Laptop Service
+                      </Link>
+                      <Link className="dropdown-item" to="/hp-laptop-service">
+                        Hp Laptop Service
+                      </Link>
+                      <Link className="dropdown-item" to="/lenevo-laptop-service">
+                        Lenovo Laptop Service
+                      </Link>
+                      
+                    </div>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/blog">Blog</Link>
+                  </li>
+           </ul>
+         </nav>
+       </header> */}
+        {/* <div className="logo" >
+          <Link to="/">Axis Computer</Link>
         </div> */}
-        <div >
+       <section>
         <header className="nav-menu-container">
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top topnav">
-            <div className="container">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
               <Link className="navbar-brand" to="/">Axis Computer</Link>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -38,7 +112,7 @@ export class Header extends React.Component {
                   <li className="nav-item active">
 
                   </li>
-                  <li className="nav-item ">
+                  <li className="nav-item">
                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                   </li>
                   <li className="nav-item">
@@ -109,9 +183,11 @@ export class Header extends React.Component {
                   </li>
                 </ul>
               </div>
-            </div>
           </nav>
-          <Switch>
+          
+        </header>
+        </section>
+        <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/gaziabad-location" component={GhaziabadLocation}/>
@@ -123,9 +199,8 @@ export class Header extends React.Component {
             <Route path="/contact" component={Contact} />
             <Route path="/blog" component={Blog} />
           </Switch>
-        </header>
         </div>
-      </div>
+      
     )
   }
 }

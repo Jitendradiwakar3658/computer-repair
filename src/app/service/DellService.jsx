@@ -7,17 +7,30 @@ export class DellService extends React.Component {
 
                     <header className="section-header ">
                         <h3>Dell Service Center</h3>
+                        <div>
+                            <div className="portfolio-wrap">
+                                <figure>
+                                    <img
+                                        src={require("../img/portfolio/antivirus-insatallation.jpg")}
+                                        className="img-fluid"
+                                        alt="" height={250} width={250}
+                                    />
+                                </figure>
+
+
+                            </div>
+                        </div>
                         <p>
                             <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Dell,
                                 we provide all kind of service for <strong>Dell Laptop </strong> like Screen Replacement, MotherBoard
-                        Replacement, Software Installation, Windows Installation, KeyBoard Replacement and many more.
+                    Replacement, Software Installation, Windows Installation, KeyBoard Replacement and many more.
                         </p>
                     </header>
                 </div>
             </section>
             <div id="mySidenav">
                 <a to="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
-                } className="contact"  alt=""/><p className="contacttext">contact us</p></a>
+                } className="contact" alt="" /><p className="contacttext">contact us</p></a>
             </div>
         </div>
         );
