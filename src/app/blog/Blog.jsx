@@ -6,247 +6,259 @@ class Blog extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showModal: false,
-            student: {
-                name: '',
-                address: '',
-                rollno: ''
-            },
-            createForm: true,
-            students: [],
-            
+            employees: [],
+            employee: {},
+            showModal: false
         }
-        this.handleChange = this.handleChange.bind(this);
     }
+
     componentWillMount() {
         var self = this;
         async.series([
-            self.getStudent.bind(self)
+            self.getEmployee.bind(self)
         ]);
-
     }
 
-    getStudent() {
+    getEmployee() {
         var self = this;
-        var url = "http://localhost:8080/getallstudent";
-        fetch(url, {
+        var apiUrl = 'http://localhost:8080/v1/findAll/employee';
+        fetch(apiUrl, {
             method: 'get',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-        }).then(res => {
-            // console.log(JSON.stringify(res));
-            return res.json();
-        }).then(result => {
-            // console.log(JSON.stringify(result));
-            self.setState({
-                students: result
-            })
-        }).catch(err => {
-            swal({
-                title: 'Error',
-                text: 'Failed to get the students! ',
-                icon: 'error'
-            })
-        });
-    }
-
-    createStudent() {
-        var apiUrl = "http://localhost:8080/addstudent";
-        // var self = this;
-        fetch(apiUrl, {
-            headers: {
-                'Accept': 'application/json',
                 'Content-Type': 'application/json'
-            },
-            method: 'post',
-            body: JSON.stringify(this.state.student)
+            }
         }).then(res => {
-            return res;
+            return res.json();
         }).then(data => {
-            swal({
-                title: 'Success',
-                text: 'Successfully created! ',
-                icon: 'success'
-            })
-            this.getStudent();
-            this.closeModal();
+            self.setState({
+                employees: data
+            });
         }).catch(err => {
             swal({
                 title: 'Error',
-                text: 'Failed to create the students! ',
+                text: 'Failed to load all Employee!!!',
                 icon: 'error'
             });
         });
     }
 
-    updateStudent(id) {
-        var apiUrl = "http://localhost:8080/updatestudent?id="+this.state.student.id;
+    createEmployee() {
+        var apiUrl = 'http://localhost:8080/v1/add/employee';
+        var self = this;
+        fetch(apiUrl, {
+            method: 'post',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(self.state.employee)
+        }).then(res => {
+            return res;
+        }).then(data => {
+            swal({
+                title: 'Success',
+                text: 'Succesfully Added!',
+                icon: 'success'
+            });
+            self.getEmployee();
+            self.closeModal();
+        }).catch(err => {
+            swal({
+                title: 'Error',
+                text: 'Failed to add!',
+                icon: 'error'
+            });
+        });
+    }
+
+    updateEmployee(id) {
+        var apiUrl = 'http://localhost:8080/v1/update/employee?id=' + this.state.employee.id;
+        var self = this;
         fetch(apiUrl, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
             method: 'put',
-            body: JSON.stringify(this.state.student)
+            body: JSON.stringify(this.state.employee)
         }).then(res => {
             return res;
         }).then(data => {
             swal({
                 title: 'Success',
-                text: 'Successfully Updated! ',
+                text: 'Succesfully Upadted!',
                 icon: 'success'
-            })
-            this.getStudent();
-            this.closeModal();
+            });
+            self.getEmployee();
+            self.closeModal();
         }).catch(err => {
             swal({
                 title: 'Error',
-                text: 'Failed to be Updated! ',
+                text: 'Failed to update!',
                 icon: 'error'
-            })
+            });
+            self.closeModal();
         });
     }
 
-    removerStudent(event,item) {
-        console.log(JSON.stringify(item));
-        var apiUrl = "http://localhost:8080/deletebyid?id="+ item.id;
-        fetch(apiUrl,{
+    removeEmployee(event, item) {
+        var apiUrl = 'http://localhost:8080/v1/remove/employee?id=' + item.id;
+        var self = this;
+
+        fetch(apiUrl, {
+            method: 'delete',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
-            },
-            method: 'delete'
+            }
         }).then(res => {
             return res;
-        }).then(data =>{
-            this.closeModal();
-            swal({
-                title: 'Success',
-                text: 'Successfully Removed!',
-                icon: 'success'
-            })
-            this.getStudent();
-            
-        }).catch(err =>{
-            this.closeModal();
+        }).then(function (isConfirm) {
+            if (isConfirm) {
+                swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this imaginary data!",
+                    icon: "warning",
+                    buttons: [
+                        'No, cancel it!',
+                        'Yes, I am sure!'
+                    ]
+                });
+                self.getEmployee();
+            } else {
+                swal("Cancelled", "Your imaginary file is safe :)", "error");
+            }
+        }).catch(err => {
             swal({
                 title: 'Error',
-                text: 'Failed to be Removed! ',
+                text: 'Failed to remove!',
                 icon: 'error'
-            })
+            });
         });
     }
 
     handleChange(event) {
-        var obj = this.state.student;
-        obj[event.target.name] = event.target.value;
+        var obj = this.state.employee;
+        if (event.target.name == 'status') {
+            obj[event.target.name] = (event.target.checked ? true : false);
+        }
+        else {
+            obj[event.target.name] = event.target.value;
+        }
 
         this.setState({
-            student: obj
+            employee: obj
+        }, () => {
+            console.log(JSON.stringify(this.state.employee))
         });
     }
 
     openModal(event, item) {
-        
         this.setState({
-            student: (item == null ? {} : Object.assign({}, item)),
-            createForm: (item == null? true:false),
+            employee: (item == null ? {} : Object.assign({}, item)),
+            createForm: (item == null ? true : false),
             showModal: true
-        },()=>{
-            console.log(JSON.stringify(this.state.student))
-        })
+        });
     }
 
     closeModal() {
         this.setState({
             showModal: false,
-            student: {}
-        })
+            employee: {}
+        });
     }
-
-    // editStudentDetails(e,item){
-    //     console.log(JSON.stringify(item))
-    //     }
 
     render() {
         return (
             <div>
-                <h1>Blog!</h1>
                 <Panel>
                     <Row>
-                        <Col xs={12} className="pull-right" >
-                            <Button className="btn " onClick={(event) => this.openModal(event)}>Create Student</Button>
-                        </Col>
+                        <Col><Button onClick={(event) => this.openModal(event)}>Create</Button></Col>
                     </Row>
                     <Table>
                         <thead>
                             <tr>
-                                <td>ID</td>
+                                <td>Id</td>
                                 <td>Name</td>
-                                <td>Address</td>
-                                <td>Roll no</td>
-                                <td>Remove Student</td>
+                                <td>Department</td>
+                                <td>Salary</td>
+                                <td>Age</td>
+                                <td>Status</td>
+                                <td>Remove</td>
                             </tr>
                         </thead>
                         <tbody>
-                            {this.state.students.map((item, index) => (
-                                <tr key={index} onClick={(event) => this.openModal(event, item)} 
-                                // onClick={(event) => this.editStudent(event, item)}
-                            >
-                                    <td>{item.id}</td>
-                                    <td>{item.name}</td>
-                                    <td>{item.address}</td>
-                                    <td>{item.rollno}</td>
-                                    {this.state.student &&
-                                    <td><Button className="btn btn-danger" onClick={(event) => this.removerStudent(event,item)}>Remove</Button></td>
-                                    }
+                            {this.state.employees.map((item, index) => (
+                                <tr key={index}>
+                                    <td onClick={(event) => this.openModal(event, item)}>{item.id}</td>
+                                    <td onClick={(event) => this.openModal(event, item)}>{item.name}</td>
+                                    <td onClick={(event) => this.openModal(event, item)}>{item.department}</td>
+                                    <td onClick={(event) => this.openModal(event, item)}>{item.salary}</td>
+                                    <td onClick={(event) => this.openModal(event, item)}>{item.age}</td>
+                                    <td onClick={(event) => this.openModal(event, item)}>{item.status ? 'Active' : 'Inactive'}</td>
+                                    <td ><Button className="btn btn-danger" onClick={(event) => this.removeEmployee(event, item)}>Remove</Button></td>
                                 </tr>
                             ))}
                         </tbody>
                     </Table>
-
                     <Modal show={this.state.showModal}
-                        onHide={this.closeModal.bind(this) } animation={false}
-                        backdrop={false} keyboard={false}
-                    >
-                        <Modal.Header >
-                            <Modal.Title>Create Student</Modal.Title>
+                        onHide={this.closeModal.bind(this)} animation={false}
+                        backdrop={false} keyboard={false}>
+                        <Modal.Header>
+                            <Modal.Title>Create Employee</Modal.Title>
                         </Modal.Header>
-                        <Modal.Body >
-                            
+                        <Modal.Body>
                             <div className="form-group">
                                 <label className="control-label">Name</label>
-                                <FormControl id="name" name="name" type="text"
-                                    value={this.state.student.name} className="form-control"
-                                    onChange={(event) => this.handleChange(event)} />
+                                <FormControl type="text" name="name" value={this.state.employee.name}
+                                    className="form-control" onChange={(event) => this.handleChange(event)} />
                             </div>
                             <div className="form-group">
-                                <label className="control-label">Address</label>
-                                <FormControl id="address" name="address" type="text"
-                                    value={this.state.student.address} className="form-control"
-                                    onChange={(event) => this.handleChange(event)} />
+                                <label className="control-label">Department</label>
+                                <FormControl type="select" name="department" value={this.state.employee.department}
+                                    componentClass="select" className="form-control" onChange={(event) => this.handleChange(event)}
+                                >
+                                    <option value="">select department</option>
+                                    <option value="Hr">Hr</option>
+                                    <option value="SAP">SAP</option>
+                                    <option value="Software Developer">Software Developer</option>
+                                    <option value="Software Engineer">Software Engineer</option>
+                                    <option value="Network Engineer">Network Engineer</option>
+                                    <option value="UI Developer">UI Developer</option>
+                                    <option value="Web Developer">Web Developer</option>
+                                </FormControl>
                             </div>
-                            <div>
-                                <label className="control-label">Roll No</label>
-                                <FormControl id="rollno" name="rollno" type="text"
-                                    className="form-control" value={this.state.student.rollno}
-                                    onChange={(event) => this.handleChange(event)} />
+                            <div className="form-group">
+                                <label className="control-label">Salary</label>
+                                <FormControl type="text" name="salary" value={this.state.employee.salary}
+                                    className="form-control" onChange={(event) => this.handleChange(event)} />
+                            </div>
+                            <div className="form-group">
+                                <label className="control-label">Age</label>
+                                <FormControl type="text" name="age" value={this.state.employee.age}
+                                    className="form-control" onChange={(event) => this.handleChange(event)} />
+                            </div>
+                            <div className="form-group">
+                                <label className="control-label">Activate or Inactivate</label><br />
+                                <label className="switch switch-lg">
+                                    <input type="checkbox" name="status" value={this.state.employee.status}
+                                        onChange={(event) => this.handleChange(event)}
+                                        checked={this.state.employee.status} />
+                                    <em></em>
+                                </label>
                             </div>
                         </Modal.Body>
                         <Modal.Footer>
                             {this.state.createForm &&
-                                <Button className="btn btn-primary save-btn" type="submit" onClick={this.createStudent.bind(this)}>Create</Button>
+                                <Button className="btn btn-primary" onClick={(event) => this.createEmployee(event)}>Create</Button>
                             }
-
                             {!this.state.createForm &&
-                                <Button className="btn btn-primary save-btn" onClick={(e)=>this.updateStudent(e)}>Update</Button>
-                            }                            
-                            <Button className="btn btn-secondary" onClick={this.closeModal.bind(this)}>Cancel</Button>
+                                <Button className="btn btn-primary" onClick={(event) => this.updateEmployee(event)}>Update</Button>
+                            }
+                            <Button className="btn btn-secondary" onClick={(event) => this.closeModal(event)}>close</Button>
                         </Modal.Footer>
                     </Modal>
-
                 </Panel>
             </div>
         );

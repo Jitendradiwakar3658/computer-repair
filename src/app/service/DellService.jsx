@@ -16,8 +16,6 @@ export class DellService extends React.Component {
                                         alt="" height={250} width={250}
                                     />
                                 </figure>
-
-
                             </div>
                         </div>
                         <p>
