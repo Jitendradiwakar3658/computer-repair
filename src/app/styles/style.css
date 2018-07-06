@@ -337,11 +337,16 @@ header nav ul li a.active, header nav ul li a:hover {
   
 }
 
+.dropdown-menu:hover {
+  background-color: #fff;
+  color: #18d36e;
+  
+}
+
 .dropdown-menu a:hover {
   color: #fff;
   background-color: #343a40;
-  /* padding: 10px; */
-  /* text-align: center; */
+  border-radius: 0%
 }
 
 nav a {
@@ -352,6 +357,33 @@ nav a {
   position: relative;
   top: 200px;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #343a40;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 /*--------------------------------------------------------------
 # Sections

@@ -601,6 +601,7 @@ export class Home extends React.Component {
                 <div className="contact-phone">
                   <h3>Phone Number</h3>
                   <p><a href="tel:+918510044642">+91 8510 0446 42</a></p>
+                  <p><a href="tel:+919873844642">+91 9873 8446 42</a></p>
                 </div>
               </div>
 
@@ -678,7 +679,7 @@ export class Home extends React.Component {
           <i className="fa fa-chevron-up" />
         </a> */}
         <div id="mySidenav">
-          <a to="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
+          <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
           } className="contact"  alt=""/><p className="contacttext">call us</p></a>
         </div>
       </div>

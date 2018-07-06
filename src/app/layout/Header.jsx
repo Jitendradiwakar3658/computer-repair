@@ -132,7 +132,7 @@ export class Header extends React.Component {
                       Support Location
                     </Link>
                     <div
-                      className="dropdown-menu "
+                      className="dropdown-menu dropdown-content"
                       aria-labelledby="navbarDropdownPortfolio"
                     >
                       <Link className="dropdown-item" to="/gaziabad-location">
@@ -160,7 +160,7 @@ export class Header extends React.Component {
                       Services
                     </Link>
                     <div
-                      className="dropdown-menu "
+                      className="dropdown-menu dropdown-content"
                       aria-labelledby="navbarDropdownPortfolio"
                     >
                       <Link className="dropdown-item" to="/dell-laptop-service">
