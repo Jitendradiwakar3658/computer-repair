@@ -1,7 +1,56 @@
 import React from "react"
 import "../styles/style.css"
+import swal from 'sweetalert';
 class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: {}
+    }
+  }
 
+  createUser() {
+    var apiUrl = 'https://mail.google.com/mail/u/0/?tab=wm#inbox';
+    var self = this;
+    fetch(apiUrl, {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(self.state.user)
+    }).then(res => {
+      return res;
+    }).then(data => {
+      swal({
+        title: 'Success',
+        text: 'Succesfully Sent!',
+        icon: 'success'
+      });
+    }).catch(err => {
+      swal({
+        title: 'Error',
+        text: 'Failed to send!',
+        icon: 'error'
+      });
+    });
+  }
+
+  handleChange(event) {
+    var obj = this.state.user;
+    if (event.target.name == 'status') {
+        obj[event.target.name] = (event.target.checked ? true : false);
+    }
+    else {
+        obj[event.target.name] = event.target.value;
+    }
+
+    this.setState({
+        employee: obj
+    }, () => {
+        console.log(JSON.stringify(this.state.employee))
+    });
+}
 
   render() {
     return (
@@ -22,12 +71,12 @@ class Contact extends React.Component {
                 <img
                   src={require("../img/location.png")}
                   alt=""
-                  className="img-fluid" height={27} width={27}
+                  className="img-fluid conicon" height={27} width={27}
                 />
                 <div className="contact-address">
 
                   <h3>Address</h3>
-                  <address>Shop No. 6, First 
+                  <address>Shop No. 6, First
                     Floor, Sunrise Mall,
                     Sec-11, Vasundhara, Gzb. U.P.</address>
                 </div>
@@ -37,7 +86,7 @@ class Contact extends React.Component {
                 <img
                   src={require("../img/contact.png")}
                   alt=""
-                  className="img-fluid" height={27} width={27}
+                  className="img-fluid conicon" height={27} width={27}
                 />
                 <div className="contact-phone">
                   <h3>Phone Number</h3>
@@ -50,7 +99,7 @@ class Contact extends React.Component {
                 <img
                   src={require("../img/email.png")}
                   alt=""
-                  className="img-fluid" height={25} width={25}
+                  className="img-fluid conicon" height={25} width={25}
                 />
                 <div className="contact-email">
                   <h3>Email</h3>
@@ -68,9 +117,9 @@ class Contact extends React.Component {
                   <div className="form-group col-md-6">
                     <input
                       type="text"
-                      name="name"
+                      name="name" value={this.state.user.name}
                       className="form-control"
-                      id="name"
+                      id="name" onChange={(event) => this.handleChange(event)}
                       placeholder="Your Name"
                       data-rule="minlen:4"
                       data-msg="Please enter at least 4 chars"
@@ -81,8 +130,8 @@ class Contact extends React.Component {
                     <input
                       type="email"
                       className="form-control"
-                      name="email"
-                      id="email"
+                      name="email" value={this.state.user.email}
+                      id="email" onChange={(event) => this.handleChange(event)}
                       placeholder="Your Email"
                       data-rule="email"
                       data-msg="Please enter a valid email"
@@ -94,8 +143,8 @@ class Contact extends React.Component {
                   <input
                     type="text"
                     className="form-control"
-                    name="subject"
-                    id="subject"
+                    name="subject" value={this.state.user.subject}
+                    id="subject" onChange={(event) => this.handleChange(event)}
                     placeholder="Subject"
                     data-rule="minlen:4"
                     data-msg="Please enter at least 8 chars of subject"
@@ -105,8 +154,8 @@ class Contact extends React.Component {
                 <div className="form-group">
                   <textarea
                     className="form-control"
-                    name="message"
-                    rows="5"
+                    name="message" value={this.state.user.message}
+                    rows="5" onChange={(event) => this.handleChange(event)}
                     data-rule="required"
                     data-msg="Please write something for us"
                     placeholder="Message"
@@ -114,7 +163,7 @@ class Contact extends React.Component {
                   <div className="validation" />
                 </div>
                 <div className="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit"  onClick={(event) => this.createUser(event)}>Send Message</button>
                 </div>
               </form>
             </div>
@@ -123,7 +172,7 @@ class Contact extends React.Component {
         </section>
         <div id="mySidenav">
           <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
-          } className="contact"  alt=""/><p className="contacttext">call us</p></a>
+          } className="contact" alt="" /><p className="contacttext">call us</p></a>
         </div>
       </div>
     )

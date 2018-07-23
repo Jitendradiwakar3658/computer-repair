@@ -27,12 +27,7 @@ export class Home extends React.Component {
                 alt=""
                 className="img-fluid"
               />
-              <div className="carousel-caption">
-                <Link to="#">
-                  <h1>Welcome to Axis Computer</h1>
-                  <p>Thank you, Jitendra!</p>
-                </Link>
-              </div>
+
             </div>
             <div className="carousel-item">
               <img
@@ -40,12 +35,7 @@ export class Home extends React.Component {
                 alt=""
                 className="img-fluid"
               />
-              <div className="carousel-caption carousel-edit">
-                <Link to="#">
-                  <h1 className="carousel-edit">Welcome to Axis Computer</h1>
-                  <p>Thank you, Jitendra!</p>
-                </Link>
-              </div>
+
             </div>
             <div className="carousel-item">
               <img
@@ -53,12 +43,7 @@ export class Home extends React.Component {
                 alt=""
                 className="img-fluid"
               />
-              <div className="carousel-caption">
-                <Link to="#">
-                  <h1>Welcome to Axis Computer</h1>
-                  <p>Thank you, Jitendra!</p>
-                </Link>
-              </div>
+
             </div>
           </div>
           {/* <Link className="carousel-control-prev" to="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -91,14 +76,14 @@ export class Home extends React.Component {
                 data-wow-duration="1.4s"
               >
                 <div className="icon">
-                  <i className="ion-ios-analytics-outline" />
+                  <i className="fa fa-laptop" />
                 </div>
                 <h4 className="title">
                   <Link to="dell-laptop-service">Dell Laptop</Link>
                 </h4>
                 <p className="description">
-                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Dell,
-                  we provide all kind of service for <strong>Dell Laptop </strong> like S <Link  to="/dell-laptop-service">Read more...</Link>
+                  <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Dell,
+                  we provide all kind of service for <strong>Dell Laptop </strong> like S <Link to="/dell-laptop-service">Read more...</Link>
                 </p>
               </div>
               <div
@@ -106,14 +91,14 @@ export class Home extends React.Component {
                 data-wow-duration="1.4s"
               >
                 <div className="icon">
-                  <i className="ion-ios-bookmarks-outline" />
+                  <i className="fa fa-laptop" />
                 </div>
                 <h4 className="title">
                   <Link to="hp-laptop-service">Hp Laptop</Link>
                 </h4>
                 <p className="description">
-                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Hp,
-                 we provide all kind of service for <strong>Hp Laptop </strong> like Scr <Link  to="/hp-laptop-service">Read more...</Link>
+                  <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Hp,
+                 we provide all kind of service for <strong>Hp Laptop </strong> like Scr <Link to="/hp-laptop-service">Read more...</Link>
                 </p>
               </div>
               <div
@@ -121,14 +106,14 @@ export class Home extends React.Component {
                 data-wow-duration="1.4s"
               >
                 <div className="icon">
-                  <i className="ion-ios-paper-outline" />
+                  <i className="fa fa-laptop" />
                 </div>
                 <h4 className="title">
                   <Link to="lenevo-laptop-service">Lenevo Laptop</Link>
                 </h4>
                 <p className="description">
-                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Lenevo,
-                  we provide all kind of service for <strong>Lenevo Lapt </strong> <Link  to="/lenevo-laptop-service">Read more...</Link>
+                  <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Lenevo,
+                  we provide all kind of service for <strong>Lenevo Lapt </strong> <Link to="/lenevo-laptop-service">Read more...</Link>
                 </p>
               </div>
               {/* <div
@@ -199,9 +184,8 @@ export class Home extends React.Component {
             <header className="section-header">
               <h3>Our Skills</h3>
               <p>
-                We have best team to repair Laptops. We provide all kinds of servicing in laptop and we handle daily
-                10-15 laptop repair and we provide you fast service so you can save your also. We are easing the pain of
-                technology frustrations with our knowledgeable and skilled technicians. It’s our goal to be Link
+              We have the agile team to repair Laptops. We provide all kinds of service on the laptop and we handle daily
+                client query and take care of their problems. We work as remotely so we can deduct the issue in laptop and we provide you fast service so you can save your time. We are easing the pain of technology frustrations with our knowledgeable and skilled technicians. It’s our goal to be Link
                 top-most provider of computer support for businesses as well as home users.
               </p>
             </header>
@@ -215,11 +199,14 @@ export class Home extends React.Component {
                       className="img-fluid"
                     />
                     <div className="icon">
+                      <i className="fa fa-tachometer" />
                     </div>
                   </div>
                   <h2 className="title"><Link to="#">Our Mission</Link></h2>
                   <p>
-                    We believe in providing Link service that is fair. We believe in upfront and transparent pricing, not charging for Link service that doesn’t solve our customer’s problems, and by taking responsibility when we don’t perform our service as promised.
+                    We believe in providing a service that is fair and reliable. We believe in upfront and transparent fair and
+                    not charging for a service that doesn’t solve our customer’s problems, and by taking responsibility
+                    when we don’t perform our service as promised.
                   </p>
                 </div>
               </div>
@@ -233,12 +220,14 @@ export class Home extends React.Component {
                       className="img-fluid"
                     />
                     <div className="icon">
-                      <i className="ion-ios-list-outline" />
+                      <i className="fa fa-list" />
                     </div>
                   </div>
                   <h2 className="title"><Link to="#">Our Plan</Link></h2>
                   <p>
-                    We are easing the pain of technology frustrations with our knowledgeable and skilled technicians.  We are taking care of issues and providing technology solutions around the clock. To improve it we give you best service in Ghazibad.
+                    We ease the pain of technology frustrations with our knowledgeable and skilled technicians.
+                       We take care of issues, faults and providing technology solutions around the clock. To improve it,
+                        we give you the best service in Ghaziabad.
                   </p>
                 </div>
               </div>
@@ -252,13 +241,14 @@ export class Home extends React.Component {
                       className="img-fluid"
                     />
                     <div className="icon">
-                      <svg-icon>
-                      </svg-icon>
+                      <i className="fa fa-eye" />
                     </div>
                   </div>
                   <h2 className="title"><Link to="#">Our Vision</Link></h2>
                   <p>
-                    It’s our goal to be Link top-most provider of computer support for businesses as well as home users. We believe in achieving this with prompt service at Link affordable cost. Axis Computer is dedicated in providing the highest standards in computer.
+                    It’s our goal to be a top-most provider of computer support for businesses as well as home users.
+                      We believe in achieving this with prompt service at an affordable cost. Dell Laptop service center is dedicated to
+                       providing the highest standards in the computer.
                   </p>
                 </div>
               </div>
@@ -572,7 +562,7 @@ export class Home extends React.Component {
             <div className="section-header">
               <h3>Contact Us</h3>
               <p>
-              Email us with any query or call +91 8510 0446 42. We would be happy to solve your problem and set up meeting with you.
+                Email us with any query or call +91 8510 0446 42. We would be happy to solve your problem and set up meeting with you.
               </p>
             </div>
 
@@ -585,7 +575,7 @@ export class Home extends React.Component {
                 />
                 <div className="contact-address">
                   <h3>Address</h3>
-                  <address>Shop No. 1, First 
+                  <address>Shop No. 1, First
                     Floor, Sunrise Mall,
                     Sec-11, Vasundhara, Ghaziabad, U.P.</address>
                 </div>
@@ -606,7 +596,7 @@ export class Home extends React.Component {
               </div>
 
               <div className="col-md-4">
-                <img src={require("../img/email.png")} height={25} width={25} alt=""/>
+                <img src={require("../img/email.png")} height={25} width={25} alt="" />
                 <br />
                 <div className="contact-email">
                   <h3>Email</h3>
@@ -680,7 +670,7 @@ export class Home extends React.Component {
         </a> */}
         <div id="mySidenav">
           <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
-          } className="contact"  alt=""/><p className="contacttext">call us</p></a>
+          } className="contact" alt="" /><p className="contacttext">call us</p></a>
         </div>
       </div>
     )

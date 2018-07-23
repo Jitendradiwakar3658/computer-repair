@@ -1,13 +1,4 @@
-/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 body {
   background: #fff;
@@ -15,10 +6,29 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* .carousel-deom{
-  height: 450px;
+.logos{
   position: relative;
+  /* left: 100px; */
+  color: #18d36e;
+}
+
+.logoimg {
+  position: relative;
+}
+
+/* .mailinfo {
+  position: relative;
+  top: -30px;
+}
+
+.phoneinfo {
+  position: relative;
+  top: -65px;
 } */
+
+.imgs {
+  float: left;
+}
 
 a {
   color: #18d26e;
@@ -323,9 +333,12 @@ header nav ul li a:hover, header nav ul li a.active {
   background: #18d26e;
 } */
 
-header nav {
-  float: right;
+/* .top-navbar{
+  position: relative;
 }
+nav {
+  background-color: #212529;
+} */
 
 header nav ul li a.active, header nav ul li a:hover {
   color: #fff;
@@ -333,6 +346,14 @@ header nav ul li a.active, header nav ul li a:hover {
   border-radius: 5px;
 }
 
+header nav ul li {
+  font-weight: 700;
+  line-height: 2em;
+}
+
+header nav li {
+  letter-spacing: 2px;
+}
 .dropdown-menu {
   background-color: #fff;
   color: #18d36e;
@@ -342,23 +363,23 @@ header nav ul li a.active, header nav ul li a:hover {
 .dropdown-menu:hover {
   background-color: #fff;
   color: #18d36e;
-  
 }
 
 .dropdown-menu a:hover {
   color: #fff;
   background-color: #343a40;
-  border-radius: 0%
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* padding: 10px; */
 }
 
 nav a {
   text-align: center;
 }
 
-.nav-menu-container {
+/* .nav-menu-container nav{
   position: relative;
-  top: 200px;
-}
+  top: 0px;
+} */
 
 .dropdown {
   position: relative;
@@ -368,7 +389,7 @@ nav a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -394,6 +415,16 @@ nav a {
 --------------------------------*/
 .section-header h3 {
   font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header h5 {
+  font-size: 20px;
   color: #111;
   text-transform: uppercase;
   text-align: center;
@@ -1207,7 +1238,7 @@ nav a {
 }
 
 #footer .footer-top .footer-info h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin: 0 0 20px;
   padding: 2px 0 2px 10px;
   line-height: 1;
@@ -1455,4 +1486,24 @@ nav a {
   top: -29px;
   position: relative;
   left: 35px;
+}
+
+.allservice{
+  position: relative;
+  left: 100px;
+}
+
+.location {
+  list-style: none;
+  color: #111;
+}
+
+.location li a {
+  color: #111;
+  font-weight: 600;
+}
+
+.location li a:hover {
+  color: #18d26e;
+  font-weight: 600;
 }

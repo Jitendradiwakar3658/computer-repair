@@ -9,14 +9,13 @@ class About extends React.Component {
           <div className="container">
             <header className="section-header">
               <h3>About Us</h3>
-              <p>
-                <strong>Axis Computer</strong> was established in Ghaziabad since 2000 and we provide all kind of service
-                in Laptop. We provide <strong>home services</strong> as well as our own<strong> shop</strong>. We have 10+ years
-                experience to repair laptops like <strong>Dell, Hp, Lenovo, Macbook, Acer, Sony</strong> etc.
-                 We deal in Motherboard replacement,
-                 Battery replacement, Software installation, Windows installation, Hinges replacement, Keyboard
-                 replacement, Screen relacement etc.
-              </p>
+              <p><strong>Dell Laptop Service Center in Ghaziabad</strong> provides Service and Repair in all kind of Dell Laptop. We provide
+              <strong> home services</strong> as well as our <strong>own shop</strong>. We have 10+ years of experience to repair laptops like <strong>Dell, Hp,
+                  Lenovo</strong> etc. We give you pain-free service in Motherboard replacement, Battery replacement, Software
+                installation, Windows installation, Hinges replacement, Keyboard replacement, Screen replacement etc.
+                 We have the agile team to handle all kind of fault in Dell Laptop and remote support to give you pain-free
+                  service. We are transparent for everything and charge the fair amount of Laptop service and give you the
+                     discount as per laptop condition. We guarantee the satisfaction service to our customer.</p>
             </header>
             <div className="row about-cols">
               <div className="col-md-4 wow fadeInUp">
@@ -28,12 +27,14 @@ class About extends React.Component {
                       className="img-fluid"
                     />
                     <div className="icon">
-                      <svg-icon><src href="svg/si-glyph-bed.svg" /></svg-icon>
+                      <i className="fa fa-tachometer" />
                     </div>
                   </div>
                   <h2 className="title"><a href="#">Our Mission</a></h2>
                   <p>
-                    We believe in providing a service that is fair. We believe in upfront and transparent pricing, not charging for a service that doesn’t solve our customer’s problems, and by taking responsibility when we don’t perform our service as promised.
+                    We believe in providing a service that is fair and reliable. We believe in upfront and transparent fair and
+                    not charging for a service that doesn’t solve our customer’s problems, and by taking responsibility
+                    when we don’t perform our service as promised.
                   </p>
                 </div>
               </div>
@@ -47,12 +48,14 @@ class About extends React.Component {
                       className="img-fluid"
                     />
                     <div className="icon">
-                      <i className="ion-ios-list-outline" />
+                      <i className="fa fa-list" />
                     </div>
                   </div>
                   <h2 className="title"><a href="#">Our Plan</a></h2>
                   <p>
-                    We are easing the pain of technology frustrations with our knowledgeable and skilled technicians.  We are taking care of issues and providing technology solutions around the clock. To improve it we give you best service in Ghazibad.
+                    We ease the pain of technology frustrations with our knowledgeable and skilled technicians.
+                       We take care of issues, faults and providing technology solutions around the clock. To improve it,
+                        we give you the best service in Ghaziabad.
                   </p>
                 </div>
               </div>
@@ -66,14 +69,14 @@ class About extends React.Component {
                       className="img-fluid"
                     />
                     <div className="icon">
-                      <svg-icon>
-                        <src href="sprite.svg#si-glyph-biscuit" />
-                      </svg-icon>
+                      <i className="fa fa-eye" />
                     </div>
                   </div>
                   <h2 className="title"><a href="#">Our Vision</a></h2>
                   <p>
-                    It’s our goal to be a top-most provider of computer support for businesses as well as home users. We believe in achieving this with prompt service at a affordable cost. Axis Computer is dedicated in providing the highest standards in computer.
+                    It’s our goal to be a top-most provider of computer support for businesses as well as home users.
+                      We believe in achieving this with prompt service at an affordable cost. Dell Laptop service center is dedicated to
+                       providing the highest standards in the computer.
                   </p>
                 </div>
               </div>
@@ -117,7 +120,7 @@ class About extends React.Component {
         </section>
         <div id="mySidenav">
           <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
-          } className="contact"  alt=""/><p className="contacttext">call us</p></a>
+          } className="contact" alt="" /><p className="contacttext">call us</p></a>
         </div>
       </div>
     )

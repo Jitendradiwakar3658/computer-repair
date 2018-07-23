@@ -8,17 +8,45 @@ export class LenevoService extends React.Component {
 
                         <header className="section-header">
                             <h3>Lenovo Service center</h3>
+                            <div>
+                            <div className="portfolio-wrap">
+                                <figure>
+                                    <img
+                                        src={require("../img/lenovo-service-center.jpg")}
+                                        className="img-fluid imgs"
+                                        alt="dell laptop service" height={150} width={150}
+                                    />
+
+                                </figure>
+                            </div>
+                        </div>
                             <p>
-                                <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Lenovo,
-                            we provide all kind of service for <strong>Lenovo Laptop </strong> like Screen Replacement, MotherBoard
-                            Replacement, Software Installation, Windows Installation, KeyBoard Replacement and many more.
-                    </p>
+                                We provide the best service in Lenovo Laptops,
+                                    we provide all kind of service for Laptop like Screen Replacement, Motherboard
+                        Replacement, Software Installation, Windows Installation, Keyboard Replacement and other miner fauls.
+                        We are transparent about our fair and give you quality service and assistance. Our expert will always ready
+                        to help you on your door either you can visit us. We fix the windows problems while updating windows
+                        and software. Get a complete support and repair your system in the affordable price and get the friendly
+                         Laptop repair with the door service.
+                        </p>
                         </header>
                     </div>
                 </section>
+                <div className="col-md-12 allservice">
+                    <h1>Why Choose Us</h1>
+                    <ul>
+                        <li>24*7 Support</li>
+                        <li>Home Service</li>
+                        <li>Low Cost Service</li>
+                        <li>15 Days Warranty</li>
+                        <li>Fast Service Provider</li>
+                        <li>Expert Team To Provide You Best Service</li>
+                        <li>Provide All Kind Of Service In Laptop</li>
+                    </ul>
+                </div>
                 <div id="mySidenav">
                     <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
-                    } className="contact"  alt=""/><p className="contacttext">call us</p></a>
+                    } className="contact" alt="" /><p className="contacttext">call us</p></a>
                 </div>
             </div>
         );
