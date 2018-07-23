@@ -82,9 +82,10 @@ export class Home extends React.Component {
                   <Link to="dell-laptop-service">Dell Laptop</Link>
                 </h4>
                 <p className="description">
-                  <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Dell,
-                  we provide all kind of service for <strong>Dell Laptop </strong> like S <Link to="/dell-laptop-service">Read more...</Link>
-                </p>
+                <strong>Dell Laptop Service Center</strong> provides the best service in <strong>Dell Laptop</strong>,
+                We provide all kind of service for Laptop like Screen Replacement, Motherboard
+                    Replacement, Software Installation, Windows Installation, Keyboard Replacement and other miner fauls.
+                    We are transparent about our fair and give you quality service and <Link to="/dell-laptop-service"> read more...</Link></p>
               </div>
               <div
                 className="col-lg-4 col-md-6 box wow bounceInUp"
@@ -97,9 +98,10 @@ export class Home extends React.Component {
                   <Link to="hp-laptop-service">Hp Laptop</Link>
                 </h4>
                 <p className="description">
-                  <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Hp,
-                 we provide all kind of service for <strong>Hp Laptop </strong> like Scr <Link to="/hp-laptop-service">Read more...</Link>
-                </p>
+                <strong>Dell Laptop Service Center</strong> provides the best service in <strong>Hp Laptop</strong>,
+                                We provide all kind of service for Laptop like Screen Replacement, Motherboard
+                    Replacement, Software Installation, Windows Installation, Keyboard Replacement and other miner fauls.
+                    We are transparent about our fair and give you quality service and  <Link to="/hp-laptop-service">read more...</Link></p>
               </div>
               <div
                 className="col-lg-4 col-md-6 box wow bounceInUp"
@@ -112,9 +114,10 @@ export class Home extends React.Component {
                   <Link to="lenevo-laptop-service">Lenevo Laptop</Link>
                 </h4>
                 <p className="description">
-                  <strong>Axis Computer</strong> provides the best service in all kind of Laptops like Lenevo,
-                  we provide all kind of service for <strong>Lenevo Lapt </strong> <Link to="/lenevo-laptop-service">Read more...</Link>
-                </p>
+                <strong>Dell Laptop Service Center</strong> provides the best service in <strong>Lenovo Laptop</strong>,
+               We provide all kind of service for Laptop like Screen Replacement, Motherboard
+               Replacement, Software Installation, Windows Installation, Keyboard Replacement and other miner fauls.
+                We are transparent about our fair and give you quality service and <Link to="/lenevo-laptop-service">read more...</Link></p>
               </div>
               {/* <div
                 className="col-lg-4 col-md-6 box wow bounceInUp"

@@ -19,8 +19,8 @@ export class HpService extends React.Component {
                             </div>
                         </div>
                         <p>
-                            We provide the best service in Hp Laptops,
-                                we provide all kind of service for Laptop like Screen Replacement, Motherboard
+                            <strong>Dell Laptop Service Center</strong> provides the best service in Hp Laptops,
+                                We provide all kind of service for Laptop like Screen Replacement, Motherboard
                     Replacement, Software Installation, Windows Installation, Keyboard Replacement and other miner fauls.
                     We are transparent about our fair and give you quality service and assistance. Our expert will always ready
                     to help you on your door either you can visit us. We fix the windows problems while updating windows

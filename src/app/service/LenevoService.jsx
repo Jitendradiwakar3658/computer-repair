@@ -22,7 +22,7 @@ export class LenevoService extends React.Component {
                         </div>
                             <p>
                                 We provide the best service in Lenovo Laptops,
-                                    we provide all kind of service for Laptop like Screen Replacement, Motherboard
+                                    We provide all kind of service for Laptop like Screen Replacement, Motherboard
                         Replacement, Software Installation, Windows Installation, Keyboard Replacement and other miner fauls.
                         We are transparent about our fair and give you quality service and assistance. Our expert will always ready
                         to help you on your door either you can visit us. We fix the windows problems while updating windows

@@ -20,7 +20,7 @@ export class DellService extends React.Component {
                             </div>
                         </div>
                         <p>
-                            We provide the best service in Dell Laptops,
+                        <strong>Dell Laptop Service Center</strong> provides the best service in Dell Laptops,
                                 we provide all kind of service for Laptop like Screen Replacement, Motherboard
                     Replacement, Software Installation, Windows Installation, Keyboard Replacement and other miner fauls.
                     We are transparent about our fair and give you quality service and assistance. Our expert will always ready
