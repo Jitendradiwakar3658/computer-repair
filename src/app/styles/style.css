@@ -339,6 +339,9 @@ header nav ul li a:hover, header nav ul li a.active {
 nav {
   background-color: #212529;
 } */
+header nav {
+  z-index: 997;
+}
 
 header nav ul li a.active, header nav ul li a:hover {
   color: #fff;

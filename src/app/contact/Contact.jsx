@@ -38,7 +38,7 @@ class Contact extends React.Component {
 
   handleChange(event) {
     var obj = this.state.user;
-    if (event.target.name == 'status') {
+    if (event.target.name === 'status') {
         obj[event.target.name] = (event.target.checked ? true : false);
     }
     else {
@@ -112,7 +112,7 @@ class Contact extends React.Component {
             <div className="forms">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage" />
-              <form action="" method="post" role="form" className="contactForm" action="mailto:jitendra.diwaker@gmail.com">
+              <form method="post" className="contactForm" action="mailto:jitendra.diwaker@gmail.com">
                 <div className="form-row">
                   <div className="form-group col-md-6">
                     <input
@@ -170,6 +170,7 @@ class Contact extends React.Component {
 
           </div>
         </section>
+        <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
         <div id="mySidenav">
           <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
           } className="contact" alt="" /><p className="contacttext">call us</p></a>

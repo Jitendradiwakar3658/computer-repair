@@ -611,7 +611,7 @@ export class Home extends React.Component {
             <div className="forms">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage" />
-              <form action="" method="post" role="form" className="contactForm">
+              <form  method="post" className="contactForm">
                 <div className="form-row">
                   <div className="form-group col-md-6">
                     <input
@@ -668,9 +668,7 @@ export class Home extends React.Component {
             </div>
           </div>
         </section>
-        {/* <a href="#" className="back-to-top">
-          <i className="fa fa-chevron-up" />
-        </a> */}
+        <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
         <div id="mySidenav">
           <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
           } className="contact" alt="" /><p className="contacttext">call us</p></a>

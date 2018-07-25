@@ -45,6 +45,7 @@ export class GhaziabadLocation extends React.Component {
                     </header>
                     </div>
                 </section>
+                <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
                 <div id="mySidenav">
                     <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
                     } className="contact" alt="" /><p className="contacttext">call us</p></a>

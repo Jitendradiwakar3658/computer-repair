@@ -1,17 +1,17 @@
-import React from "react"
-import "../styles/style.css"
+import React from "react";
+import "../styles/style.css";
 
-import Home from "./Home"
-import About from "../about/About"
-import Contact from "../contact/Contact"
-import Blog from "../blog/Blog"
-import { Link, Route, Switch } from "react-router-dom"
-import { DellService } from "../service/DellService"
-import HpService from "../service/HpService"
-import LenevoService from "../service/LenevoService"
-import NoidaLocation from "../supportlocation/NoidaLocation"
-import GreaterNoidaLocation from "../supportlocation/GreaterNoidaLocation"
-import GhaziabadLocation from "../supportlocation/GhaziabadLocation"
+import Home from "./Home";
+import About from "../about/About";
+import Contact from "../contact/Contact";
+import Blog from "../blog/Blog";
+import { Link, Route, Switch } from "react-router-dom";
+import { DellService } from "../service/DellService";
+import HpService from "../service/HpService";
+import LenevoService from "../service/LenevoService";
+import NoidaLocation from "../supportlocation/NoidaLocation";
+import GreaterNoidaLocation from "../supportlocation/GreaterNoidaLocation";
+import GhaziabadLocation from "../supportlocation/GhaziabadLocation";
 
 export class Header extends React.Component {
   render() {
