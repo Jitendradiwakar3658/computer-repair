@@ -23,6 +23,14 @@ export class Home extends React.Component {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
+                src={require("../img/slide1.jpg")}
+                alt=""
+                className="img-fluid"
+              />
+
+            </div>
+            <div className="carousel-item">
+              <img
                 src={require("../img/slide2.jpg")}
                 alt=""
                 className="img-fluid"
@@ -32,14 +40,6 @@ export class Home extends React.Component {
             <div className="carousel-item">
               <img
                 src={require("../img/slide3.jpg")}
-                alt=""
-                className="img-fluid"
-              />
-
-            </div>
-            <div className="carousel-item">
-              <img
-                src={require("../img/slide1.jpg")}
                 alt=""
                 className="img-fluid"
               />
@@ -367,14 +367,14 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/hinges-replacement.jpg")}
+                      src={require("../img/portfolio/battery-replacement.jpg")}
                       className="img-fluid"
                       alt=""
                     />
                   </figure>
 
                   <div className="portfolio-info">
-                    <h4><Link to="#">HINGES REPLACEMENT</Link></h4>
+                    <h4><Link to="#">BATTERY REPLACEMENT</Link></h4>
                   </div>
                 </div>
               </div>

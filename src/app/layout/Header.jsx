@@ -16,37 +16,38 @@ import GhaziabadLocation from "../supportlocation/GhaziabadLocation";
 export class Header extends React.Component {
   render() {
     return (
-      <div >
+      <div ><br/><br/>
 
-        <div className="logos">
+        {/* <div className="logos">
           <img
             src={require("../img/logo.png")} width={150} height={150}
             alt=""
             className="img-fluid logoimg"
           /><span><h6><strong>Dell Laptop Service Center</strong></h6></span>      
-        </div>
+        </div> */}
 
         <section>
           <header className="nav-menu-container">
-            <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+            <nav className="navbar navbar-expand-md navbar-dark  fixed-top ">
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
-
+              <Link className="navbar-brand" to="#"><img
+            src={require("../img/logo.png")} width={40} height={40}
+            alt=""
+            className="img-fluid logoimg"
+          /></Link>
               <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ml-auto ">
-                  <li className="nav-item active">
-
-                  </li>
-                  <li className="nav-item">
+                  <li className="nav-item navlist">
                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item navlist">
                     <Link className="nav-link" to="/about">About</Link>
                   </li>
 
-                  <li className="nav-item dropdown">
+                  <li className="nav-item dropdown navlist">
                     <Link
                       className="nav-link dropdown-toggle"
                       to="/#"
@@ -74,7 +75,7 @@ export class Header extends React.Component {
 
                     </div>
                   </li>
-                  <li className="nav-item dropdown">
+                  <li className="nav-item dropdown navlist">
                     <Link
                       className="nav-link dropdown-toggle"
                       to="/#"
@@ -102,10 +103,10 @@ export class Header extends React.Component {
 
                     </div>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item navlist">
                     <Link className="nav-link" to="/contact">Contact</Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item navlist">
                     <Link className="nav-link" to="/blog">Blog</Link>
                   </li>
                 </ul>

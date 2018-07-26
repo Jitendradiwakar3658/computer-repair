@@ -339,8 +339,8 @@ header nav ul li a:hover, header nav ul li a.active {
 nav {
   background-color: #212529;
 } */
-header nav {
-  z-index: 997;
+nav {
+  background-color: #111;
 }
 
 header nav ul li a.active, header nav ul li a:hover {
@@ -354,7 +354,7 @@ header nav ul li {
   line-height: 2em;
 }
 
-header nav li {
+.navlist {
   letter-spacing: 2px;
 }
 .dropdown-menu {
@@ -376,13 +376,19 @@ header nav li {
 }
 
 nav a {
+  position: relative;
+  /* top: 19px; */
   text-align: center;
+  /* padding: 10px; */
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
-/* .nav-menu-container nav{
-  position: relative;
-  top: 0px;
-} */
+.phoneinfo{
+  color: #fff;
+  position: absolute;
+  left: 500px;;
+}
 
 .dropdown {
   position: relative;
