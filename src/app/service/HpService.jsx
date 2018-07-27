@@ -5,15 +5,15 @@ export class HpService extends React.Component {
             <div>
                 <section id="services">
                     <div className="container"> <header className="section-header">
-                        <h3>Hp Service center</h3>
+                        <h3>Hp Laptop Service center</h3>
                         <div>
                             <div className="portfolio-wrap">
                                 <figure>
-                                    <img
+                                    {/* <img
                                         src={require("../img/hp-service-center.png")}
                                         className="img-fluid imgs"
                                         alt="dell laptop service" height={150} width={150}
-                                    />
+                                    /> */}
 
                                 </figure>
                             </div>
@@ -28,21 +28,22 @@ export class HpService extends React.Component {
                      Laptop repair with the door service.
                         </p>
                     </header>
+
+                        <div className="col-md-12 allservice">
+                            <h1>Why Choose Us</h1>
+                            <ul>
+                                <li>24*7 Support</li>
+                                <li>Home Service</li>
+                                <li>Low Cost Service</li>
+                                <li>15 Days Warranty</li>
+                                <li>Fast Service Provider</li>
+                                <li>Expert Team To Provide You Best Service</li>
+                                <li>Provide All Kind Of Service In Laptop</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
-                <div className="col-md-12 allservice">
-                    <h1>Why Choose Us</h1>
-                    <ul>
-                        <li>24*7 Support</li>
-                        <li>Home Service</li>
-                        <li>Low Cost Service</li>
-                        <li>15 Days Warranty</li>
-                        <li>Fast Service Provider</li>
-                        <li>Expert Team To Provide You Best Service</li>
-                        <li>Provide All Kind Of Service In Laptop</li>
-                    </ul>
-                </div>
                 <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
                 <div id="mySidenav">
                     <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")

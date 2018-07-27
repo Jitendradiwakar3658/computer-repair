@@ -7,19 +7,19 @@ export class LenevoService extends React.Component {
                     <div className="container">
 
                         <header className="section-header">
-                            <h3>Lenovo Service center</h3>
+                            <h3>Lenovo Laptop Service center</h3>
                             <div>
-                            <div className="portfolio-wrap">
-                                <figure>
-                                    <img
+                                <div className="portfolio-wrap">
+                                    <figure>
+                                        {/* <img
                                         src={require("../img/lenovo-service-center.jpg")}
                                         className="img-fluid imgs"
                                         alt="dell laptop service" height={150} width={150}
-                                    />
+                                    /> */}
 
-                                </figure>
+                                    </figure>
+                                </div>
                             </div>
-                        </div>
                             <p>
                                 We provide the best service in Lenovo Laptops,
                                     We provide all kind of service for Laptop like Screen Replacement, Motherboard
@@ -30,20 +30,21 @@ export class LenevoService extends React.Component {
                          Laptop repair with the door service.
                         </p>
                         </header>
+                        <div className="col-md-12 allservice">
+                            <h1>Why Choose Us</h1>
+                            <ul>
+                                <li>24*7 Support</li>
+                                <li>Home Service</li>
+                                <li>Low Cost Service</li>
+                                <li>15 Days Warranty</li>
+                                <li>Fast Service Provider</li>
+                                <li>Expert Team To Provide You Best Service</li>
+                                <li>Provide All Kind Of Service In Laptop</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
-                <div className="col-md-12 allservice">
-                    <h1>Why Choose Us</h1>
-                    <ul>
-                        <li>24*7 Support</li>
-                        <li>Home Service</li>
-                        <li>Low Cost Service</li>
-                        <li>15 Days Warranty</li>
-                        <li>Fast Service Provider</li>
-                        <li>Expert Team To Provide You Best Service</li>
-                        <li>Provide All Kind Of Service In Laptop</li>
-                    </ul>
-                </div>
+
                 <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
                 <div id="mySidenav">
                     <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")

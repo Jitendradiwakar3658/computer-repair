@@ -16,7 +16,7 @@ import GhaziabadLocation from "../supportlocation/GhaziabadLocation";
 export class Header extends React.Component {
   render() {
     return (
-      <div ><br/><br/>
+      <div ><br /><br />
 
         {/* <div className="logos">
           <img
@@ -29,15 +29,12 @@ export class Header extends React.Component {
         <section>
           <header className="nav-menu-container">
             <nav className="navbar navbar-expand-md navbar-dark  fixed-top ">
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-               aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+            <Link className="navbar-brand" to="#">Dell Laptop Service Center</Link>
+              <button className="navbar-toggler tog-btn" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon "></span>
               </button>
-              <Link className="navbar-brand" to="#"><img
-            src={require("../img/logo.png")} width={40} height={40}
-            alt=""
-            className="img-fluid logoimg"
-          /></Link>
+              
               <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ml-auto ">
                   <li className="nav-item navlist">

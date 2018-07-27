@@ -339,6 +339,8 @@ header nav ul li a:hover, header nav ul li a.active {
 nav {
   background-color: #212529;
 } */
+
+
 nav {
   background-color: #111;
 }
@@ -1497,10 +1499,7 @@ nav a {
   left: 35px;
 }
 
-.allservice{
-  position: relative;
-  left: 100px;
-}
+
 
 .location {
   list-style: none;
