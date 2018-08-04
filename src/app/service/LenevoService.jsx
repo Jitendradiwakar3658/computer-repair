@@ -11,11 +11,11 @@ export class LenevoService extends React.Component {
                             <div>
                                 <div className="portfolio-wrap">
                                     <figure>
-                                        {/* <img
-                                        src={require("../img/lenovo-service-center.jpg")}
+                                        <img
+                                        src={require("../img/lenovo-service-center.png")}
                                         className="img-fluid imgs"
                                         alt="dell laptop service" height={150} width={150}
-                                    /> */}
+                                    />
 
                                     </figure>
                                 </div>

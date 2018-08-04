@@ -9,11 +9,11 @@ export class HpService extends React.Component {
                         <div>
                             <div className="portfolio-wrap">
                                 <figure>
-                                    {/* <img
+                                    <img
                                         src={require("../img/hp-service-center.png")}
                                         className="img-fluid imgs"
                                         alt="dell laptop service" height={150} width={150}
-                                    /> */}
+                                    />
 
                                 </figure>
                             </div>

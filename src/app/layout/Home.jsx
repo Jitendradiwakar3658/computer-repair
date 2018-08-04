@@ -294,7 +294,7 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/antivirus-insatallation.jpg")}
+                      src={require("../img/portfolio/antivirus-insatallation.png")}
                       className="img-fluid"
                       alt=""
                     />
@@ -367,14 +367,14 @@ export class Home extends React.Component {
                 <div className="portfolio-wrap">
                   <figure>
                     <img
-                      src={require("../img/portfolio/battery-replacement.jpg")}
+                      src={require("../img/portfolio/hinges-replacement.png")}
                       className="img-fluid"
                       alt=""
                     />
                   </figure>
 
                   <div className="portfolio-info">
-                    <h4><Link to="#">BATTERY REPLACEMENT</Link></h4>
+                    <h4><Link to="#">HINGES REPLACEMENT</Link></h4>
                   </div>
                 </div>
               </div>

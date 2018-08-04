@@ -20,7 +20,7 @@ export class Footer extends React.Component {
                 <div className="col-lg-3 col-md-6 footer-info">
                   <h2>Dell Laptop Service Center</h2>
                   <p>
-                    <strong>Dell Laptop Service Center in Ghaziabad</strong> provides Service and Repair in all kind of Dell Laptop. We provide
+                    <strong>Dell Laptop Service Center </strong> provides Service and Repair in all kind of Dell Laptop. We provide
               <strong> home services</strong> as well as our <strong>own shop</strong>. We have 10+ years of experience to repair laptops like <strong>Dell, Hp,
                   Lenovo</strong> etc.
                   </p>

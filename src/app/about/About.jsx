@@ -9,7 +9,7 @@ class About extends React.Component {
           <div className="container">
             <header className="section-header">
               <h3>About Us</h3>
-              <p><strong>Dell Laptop Service Center in Ghaziabad</strong> provides Service and Repair in all kind of Dell Laptop. We provide
+              <p><strong>Dell Laptop Service Center </strong> provides Service and Repair in all kind of Dell Laptop. We provide
               <strong> home services</strong> as well as our <strong>own shop</strong>. We have 10+ years of experience to repair laptops like <strong>Dell, Hp,
                   Lenovo</strong> etc. We give you pain-free service in Motherboard replacement, Battery replacement, Software
                 installation, Windows installation, Hinges replacement, Keyboard replacement, Screen replacement etc.
