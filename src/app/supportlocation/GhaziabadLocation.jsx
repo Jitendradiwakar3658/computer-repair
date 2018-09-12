@@ -33,11 +33,21 @@ export class GhaziabadLocation extends React.Component {
                             <div className="col-md-3">
                                 <h5>Door-step Locations</h5>
                                 <ul className="location">
-                                    <li><Link to="#" >Noida Sector 15</Link></li>
-                                    <li><Link to="#" >Noida Sector 16</Link></li>
-                                    <li><Link to="#" >Noida Sector 18</Link></li>
-                                    <li><Link to="#" >Noida Sector 37</Link></li>
-                                    <li><Link to="#" >Noida Sector 60</Link></li>
+                                    <li><Link to="/crossing-republic" >Crossing Republic</Link></li>
+                                    <li><Link to="/govind-puram-ghaziabad" >Govind Puram Ghaziabad</Link></li>
+                                    <li><Link to="/hindon-area-ghaziabad" >Hondon Area Ghaziabad</Link></li>
+                                    <li><Link to="/indira-puram-ghaziabad" >Indirapuram Ghaziabad</Link></li>
+                                    <li><Link to="/kaushambi-ghaziabad" >Kaushambi Ghaziabad</Link></li>
+                                    <li><Link to="/modi-nagar" >Modi Nagar</Link></li>
+                                    <li><Link to="/mohan-nagar-ghaziabad" >Mohan Nagar Ghaziabad</Link></li>
+                                    <li><Link to="/ram-prashad-ghaziabad" >Ram Prashad Ghaziabad</Link></li>
+                                    <li><Link to="/raj-nagar-ghaziabad" >Raj Nagar Ghaziabad</Link></li>
+                                    <li><Link to="/raj-nagar-extension-ghaziabad" >Raj Nagar Extension Ghaziabad</Link></li>
+                                    <li><Link to="/sahibabad-ghaziabad" >Sahibabad Ghaziabad</Link></li>
+                                    <li><Link to="/sanjay-nagar-ghaziabad" >Sanjay Nagar Ghaziabad</Link></li>
+                                    <li><Link to="/shalimar-ghaziabad" >Shalimar Ghaziabad</Link></li>
+                                    <li><Link to="/vaishali-ghaziabad" >Vaishali Ghaziabad</Link></li>
+                                    <li><Link to="/vasundhara-ghaziabad" >Vasundhara Ghaziabad  </Link></li>
                                 </ul>
                             </div>
                         </div>

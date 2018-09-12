@@ -16,6 +16,14 @@ body {
   position: relative;
 }
 
+.bars {
+  top: 15px;
+  position: relative;
+}
+
+/* .navwidth {
+  height: 150px;
+} */
 /* .mailinfo {
   position: relative;
   top: -30px;
