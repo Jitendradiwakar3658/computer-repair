@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/style.css";
 import { Link } from "react-router-dom";
+import ScrollUpButton from 'react-scroll-up-button';
 
 export class Home extends React.Component {
   render() {
@@ -23,13 +24,13 @@ export class Home extends React.Component {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src={require("../img/slide1.jpg")}
+                src={require("../img/slide1.png")}
                 alt=""
                 className="img-fluid"
               />
 
             </div>
-            <div className="carousel-item">
+            {/* <div className="carousel-item">
               <img
                 src={require("../img/slide2.jpg")}
                 alt=""
@@ -44,7 +45,7 @@ export class Home extends React.Component {
                 className="img-fluid"
               />
 
-            </div>
+            </div> */}
           </div>
           {/* <Link className="carousel-control-prev" to="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -62,10 +63,12 @@ export class Home extends React.Component {
             <header className="section-header wow fadeInUp">
               <h3>Services</h3>
               <p>
-                We provide home services as well as our own shop. We have 10+ years experience
-                 to repair laptops like Dell, Hp, Lenovo, Macbook, Acer, Sony etc. We have good knack over
-                 Motherboard replacement, Battery replacement, Software installation, Windows installation,
-                 Hinges replacement, Keyboard replacement, Screen relacement.
+              Is your computer running slow, cosmetically damaged, not working or just not working properly? Is your warranty date expired? No Problem! 
+                Just see our team at the Dell Laptop Service Center.
+                We provide onsite services as well as services instore at our own shop. Have a chat to our friendly staff with over 10+ years experience in
+                 laptop repairs, with brands like <b>Dell, Hp, Lenovo, Macbook, Acer, Sony</b> just to name a few and we have a good knack at those stressful jobs too like 
+                 Software Installations, Windows Installations, Driver and System Updates, Anti-Virus, Screen Replacement, Motherboard
+                Replacement, Keyboard Replacements and General Computer maintenance.
               </p>
             </header>
 
@@ -188,7 +191,9 @@ export class Home extends React.Component {
               <h3>Our Skills</h3>
               <p>
               We have the agile team to repair Laptops. We provide all kinds of service on the laptop and we handle daily
-                client query and take care of their problems. We work as remotely so we can deduct the issue in laptop and we provide you fast service so you can save your time. We are easing the pain of technology frustrations with our knowledgeable and skilled technicians. It’s our goal to be Link
+                client query and take care of their problems. We work as remotely so we can deduct the issue in laptop and 
+                we provide you fast service so you can save your time. We are easing the pain of technology frustrations with 
+                our knowledgeable and skilled technicians. It’s our goal to be Link
                 top-most provider of computer support for businesses as well as home users.
               </p>
             </header>
@@ -668,7 +673,7 @@ export class Home extends React.Component {
             </div>
           </div>
         </section>
-        <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
+        <ScrollUpButton ShowAtPosition={150} className="scrollup" style={{ background: '#18d26e' }} />
         <div id="mySidenav">
           <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
           } className="contact" alt="" /><p className="contacttext">call us</p></a>

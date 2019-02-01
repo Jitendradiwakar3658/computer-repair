@@ -1,6 +1,7 @@
-import React from "react"
-import "../styles/style.css"
-import { Link } from "react-router-dom"
+import React from "react";
+import "../styles/style.css";
+import { Link } from "react-router-dom";
+import ScrollUpButton from "react-scroll-up-button";
 class About extends React.Component {
   render() {
     return (
@@ -9,12 +10,11 @@ class About extends React.Component {
           <div className="container">
             <header className="section-header">
               <h3>About Us</h3>
-              <p><strong>Dell Laptop Service Center </strong> provides Service and Repair in all kind of Dell Laptop. We provide
-              <strong> home services</strong> as well as our <strong>own shop</strong>. We have 10+ years of experience to repair laptops like <strong>Dell, Hp,
+              <p><strong>Dell Laptop Service Center </strong> repair and replace laptop and it's part. We provide<strong> OnSite 
+                services.</strong>  We have 10+ years of experience to repair laptops like <strong>Dell, Hp,
                   Lenovo</strong> etc. We give you pain-free service in Motherboard replacement, Battery replacement, Software
                 installation, Windows installation, Hinges replacement, Keyboard replacement, Screen replacement etc.
-                 We have the agile team to handle all kind of fault in Dell Laptop and remote support to give you pain-free
-                  service. We are transparent for everything and charge the fair amount of Laptop service and give you the
+                 We have the agile team to handle all kind of fault in Dell Laptop and remote support. We are transparent for everything and charge the fair amount of Laptop service and give you the
                      discount as per laptop condition. We guarantee the satisfaction service to our customer.</p>
             </header>
             <div className="row about-cols">
@@ -118,7 +118,7 @@ class About extends React.Component {
             </div>
           </div>
         </section>
-        <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
+        <ScrollUpButton ShowAtPosition={150} id="scrollup" style= {{background: '#18d26e'}}/>
         <div id="mySidenav">
           <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
           } className="contact" alt="" /><p className="contacttext">call us</p></a>

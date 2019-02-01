@@ -1,57 +1,7 @@
 import React from "react"
 import "../styles/style.css"
-import swal from 'sweetalert';
+import ScrollUpButton from 'react-scroll-up-button';
 class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: {}
-    }
-  }
-
-  createUser() {
-    var apiUrl = 'https://mail.google.com/mail/u/0/?tab=wm#inbox';
-    var self = this;
-    fetch(apiUrl, {
-      method: 'post',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(self.state.user)
-    }).then(res => {
-      return res;
-    }).then(data => {
-      swal({
-        title: 'Success',
-        text: 'Succesfully Sent!',
-        icon: 'success'
-      });
-    }).catch(err => {
-      swal({
-        title: 'Error',
-        text: 'Failed to send!',
-        icon: 'error'
-      });
-    });
-  }
-
-  handleChange(event) {
-    var obj = this.state.user;
-    if (event.target.name === 'status') {
-        obj[event.target.name] = (event.target.checked ? true : false);
-    }
-    else {
-        obj[event.target.name] = event.target.value;
-    }
-
-    this.setState({
-        employee: obj
-    }, () => {
-        console.log(JSON.stringify(this.state.employee))
-    });
-}
-
   render() {
     return (
       <div>
@@ -117,9 +67,9 @@ class Contact extends React.Component {
                   <div className="form-group col-md-6">
                     <input
                       type="text"
-                      name="name" value={this.state.user.name}
+                      name="name" 
                       className="form-control"
-                      id="name" onChange={(event) => this.handleChange(event)}
+                      id="name" 
                       placeholder="Your Name"
                       data-rule="minlen:4"
                       data-msg="Please enter at least 4 chars"
@@ -130,8 +80,8 @@ class Contact extends React.Component {
                     <input
                       type="email"
                       className="form-control"
-                      name="email" value={this.state.user.email}
-                      id="email" onChange={(event) => this.handleChange(event)}
+                      name="email" 
+                      id="email" 
                       placeholder="Your Email"
                       data-rule="email"
                       data-msg="Please enter a valid email"
@@ -143,8 +93,8 @@ class Contact extends React.Component {
                   <input
                     type="text"
                     className="form-control"
-                    name="subject" value={this.state.user.subject}
-                    id="subject" onChange={(event) => this.handleChange(event)}
+                    name="subject" 
+                    id="subject" 
                     placeholder="Subject"
                     data-rule="minlen:4"
                     data-msg="Please enter at least 8 chars of subject"
@@ -154,8 +104,8 @@ class Contact extends React.Component {
                 <div className="form-group">
                   <textarea
                     className="form-control"
-                    name="message" value={this.state.user.message}
-                    rows="5" onChange={(event) => this.handleChange(event)}
+                    name="message" 
+                    rows="5" 
                     data-rule="required"
                     data-msg="Please write something for us"
                     placeholder="Message"
@@ -163,14 +113,14 @@ class Contact extends React.Component {
                   <div className="validation" />
                 </div>
                 <div className="text-center">
-                  <button type="submit"  onClick={(event) => this.createUser(event)}>Send Message</button>
+                  <button type="submit" >Send Message</button>
                 </div>
               </form>
             </div>
 
           </div>
         </section>
-        <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
+        <ScrollUpButton ShowAtPosition={150} className="scrollup" style={{ background: '#18d26e' }} />
         <div id="mySidenav">
           <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
           } className="contact" alt="" /><p className="contacttext">call us</p></a>

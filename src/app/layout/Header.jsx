@@ -5,13 +5,13 @@ import Home from "./Home";
 import About from "../about/About";
 import Contact from "../contact/Contact";
 import Blog from "../blog/Blog";
-import createBrowserHistory from 'history';
+import "./Fixnavbar.js";
 import { Link, Route, Switch } from "react-router-dom";
 import { DellService } from "../service/DellService";
 import HpService from "../service/HpService";
 import LenevoService from "../service/LenevoService";
 import NoidaLocation from "../supportlocation/NoidaLocation";
-import GreaterNoidaLocation from "../supportlocation/GreaterNoidaLocation";
+import DelhiLocation from "../supportlocation/DelhiLocation";
 import GhaziabadLocation from "../supportlocation/GhaziabadLocation";
 
 // Noida location
@@ -31,6 +31,9 @@ import Sector62 from '../NoidaSubLocations/Sector62';
 import Sector63 from '../NoidaSubLocations/Sector63';
 import Sector64 from '../NoidaSubLocations/Sector64';
 import Sector71 from '../NoidaSubLocations/Sector71';
+
+//Delhi Location 
+import MayurVihar from '../DelhiSubLocation/MayurVihar';
 
 //Ghaziabad Locations
 import CrossingRepublic from '../GhaziabadSubLocation/CrossingRepublic';
@@ -54,7 +57,7 @@ import MohanNagar from "../GhaziabadSubLocation/MohanNagar";
 export class Header extends React.Component {
   render() {
     return (
-      <div ><br /><br />
+      <div >
 
         {/* <div className="logos">
           <img
@@ -63,17 +66,42 @@ export class Header extends React.Component {
             className="img-fluid logoimg"
           /><span><h6><strong>Dell Laptop Service Center</strong></h6></span>      
         </div> */}
+<section>
 
+  <div className="container">
+  <div className="row w3layouts-top-strip col-sm-6"> 
+            <Link className="navbar-brand" to="/#"><b>Dell Laptop Service Center</b><br/>
+            <span className="brandtag"><b>Post Warranty Support</b></span></Link>
+            
+            <div className="coss ">
+            <img
+                  src={require("../img/email.png")}
+                  alt=""
+                  className="img-fluid conicon" height={20} width={20}
+                />
+             &nbsp;<a href="mailto:2shiv.pratap@gmail.com"><b>2shiv.pratap@gmail.com</b></a>
+             &nbsp;&nbsp;&nbsp;
+            
+            <img src={require("../img/whatsapp.png")} width={27} height={27} alt=""
+            className="img-fluid logoimg"
+            />
+             <a href="tel:+918510044642"><b>+91 8510 0446 42</b></a>
+              </div>
+              </div>
+              </div>
+              </section>
         <section>
+        
           <header className="nav-menu-container">
           
             <nav className="navbar navbar-expand-md navbar-dark fixed-top navwidth">
-            <Link className="navbar-brand" to="/">Dell Laptop Service Center<br/>Post Warranty Support</Link>
+            
               <button className="navbar-toggler tog-btn" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon "></span>
+                <span className="navbar-toggler-icon navbar-default navbar-toggle icon-bar"></span>
               </button>
-              <div>Contact</div>
+             
+              {/* <div>Contact</div> */}
               <div className="collapse navbar-collapse bars" id="navbarResponsive">
                 <ul className="navbar-nav ml-auto ">
                   <li className="nav-item navlist">
@@ -105,8 +133,8 @@ export class Header extends React.Component {
                       <Link className="dropdown-item" to="/noida-location">
                         Noida
                       </Link>
-                      <Link className="dropdown-item" to="/greater-noida-location">
-                        Greater Noida
+                      <Link className="dropdown-item" to="/delhi-location">
+                        Delhi
                       </Link>
 
                     </div>
@@ -152,11 +180,12 @@ export class Header extends React.Component {
           </header>
         </section>
         <Switch>
+          {/* Noida Location Route */}
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/gaziabad-location" component={GhaziabadLocation} />
           <Route path="/noida-location" component={NoidaLocation} />
-          <Route path="/greater-noida-location" component={GreaterNoidaLocation} />
+          <Route path="/delhi-location" component={DelhiLocation} />
           <Route path="/dell-laptop-service" component={DellService} />
           <Route path="/hp-laptop-service" component={HpService} />
           <Route path="/lenevo-laptop-service" component={LenevoService} />
@@ -178,6 +207,10 @@ export class Header extends React.Component {
           <Route path="/noida-sector-63" component={Sector63}/>
           <Route path="/noida-sector-64" component={Sector64}/>
           <Route path="/noida-sector-71" component={Sector71}/>
+
+          {/* Delhi Location Route */}
+          
+          <Route path="/mayur-vihar" component={MayurVihar}/>
 
           <Route path="/crossing-republic" component={CrossingRepublic}/>
           <Route path="/govind-puram-ghaziabad" component={GovindPuram}/>

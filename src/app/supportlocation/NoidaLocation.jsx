@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import ScrollUpButton from 'react-scroll-up-button';
 export class NoidaLocation extends React.Component {
     render() {
         return (
@@ -22,13 +22,33 @@ export class NoidaLocation extends React.Component {
                                         </figure>
                                     </div>
                                 </div>
-                                <p>The Dell Laptop Service Center in Noida provides the low cost service as well as on time
-                                service. We resolve hardware as well as software issue on time and we are available all time to
-                                help you. We provide door step service and on our shop. We have a team to resolve all kind of issues
-                                in Laptop and we give discount to our regular customer. We deal in Screen Replacement, Motherboard
-                                Replacement, Software Installation, Windows Installation, Keyboard Replacement and other miner fauls.
-                                We repair laptop in various place in Ghaziabad. We have agile team to accomplish our goal on your 
-                                door and we give you pain free service and transparnt fair.
+                                <p>
+                                    <b>The Dell Laptop Service Center in Noida</b> offers its clients assistance and service with all software and hardware in the
+                                     Noida. We offer our service <b>OnSite</b> and <b>Remotely</b>. We specialize in Screen Replacement, Motherboard Replacement, Software
+                                      Installation, Windows Installation, Keyboard Replacement and other minor faults. We are a reliable service centre for Dell laptops 
+                                      and we are here to provide you with pain free service with transparent fair.
+                                      <br/><br/>
+                                <b>Hunting for Dell Laptop Service Center in Noida ?</b><br/><br/>
+                                Hunting for a good Dell Laptop Service Center in Noida ends here. We pride ourselves on quality customer service and cost that we are better than our competition. We give 
+                                you instant service and are ready to help you at any time. Repairing is our passion and we believe in us to give you the best service in the Noida 
+                                . We are totally transparent and we work on Post warrant laptops. We have over 10+ years experience in repairing laptops and
+                                 our responses have always been good.
+                                
+                                <br/><br/>
+                                <b>Dell Laptop Onsite Support in Noida</b>
+                                
+                                <br/><br/>
+                                
+
+                                    Your laptop has become essential for day to day life, it is being used for your work, fun or to connect daily and it easies much work
+                                 and life so much easier from your home or office. Today everything is being operated by a laptop or Computer. Has your Laptop broken
+                                  down, been taken over by a virus or you accidentally wiped out all of your important data making you are unable to do your work,
+                                   talk to your colleagues, loved ones or friendslose all your treasured memories. Then just call us, we are ready to give instant 
+                                   service. We have highly skilled technicians who are happy to help you to repair your Laptop and Computer now.
+                                   
+                                      <br/><br/><Link to="/noida-location">Dell Laptop Onsite Support in Noida</Link> eases your work with fast on time and instant service and we are completely transparent in everything we do.  
+                                      Support from <b>Dell laptop Service Centre in Noida </b> is helpful when you get stuck
+                                      with your Laptop and not know what to do with it. We help our customer either Onsite and from our store. We find the solution within time with fast service for you.
                                 </p>
                             </div>
                             <div className="col-md-3">
@@ -57,7 +77,7 @@ export class NoidaLocation extends React.Component {
                     </header>
                     </div>
                 </section>
-                <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
+                <ScrollUpButton ShowAtPosition={150} className="scrollup" style={{ background: '#18d26e' }} />
                 <div id="mySidenav">
                     <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
                     } className="contact" alt="" /><p className="contacttext">call us</p></a>

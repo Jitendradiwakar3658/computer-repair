@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollUpButton from 'react-scroll-up-button';
 export class HpService extends React.Component {
     render() {
         return (
@@ -10,9 +11,9 @@ export class HpService extends React.Component {
                             <div className="portfolio-wrap">
                                 <figure>
                                     <img
-                                        src={require("../img/hp-service-center.png")}
+                                        src={require("../img/support-image.png")}
                                         className="img-fluid imgs"
-                                        alt="dell laptop service" height={150} width={150}
+                                        alt="dell laptop service" height={350} width={350}
                                     />
 
                                 </figure>
@@ -27,9 +28,9 @@ export class HpService extends React.Component {
                     and software. Get a complete support and repair your system in the affordable price and get the friendly
                      Laptop repair with the door service.
                         </p>
-                    </header>
+                    </header><br/><br/><br/>
 
-                        <div className="col-md-12 allservice">
+                        <div className="col-md-12 ">
                             <h1>Why Choose Us</h1>
                             <ul>
                                 <li>24*7 Support</li>
@@ -44,7 +45,7 @@ export class HpService extends React.Component {
                     </div>
                 </section>
 
-                <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
+                <ScrollUpButton ShowAtPosition={150} className="scrollup" style={{ background: '#18d26e' }} />
                 <div id="mySidenav">
                     <a href="tel:+918510044642" className="fixedcontact"><img src={require("../img/contact-us-icon.png")
                     } className="contact" alt="" /><p className="contacttext">call us</p></a>
